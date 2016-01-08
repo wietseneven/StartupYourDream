@@ -17413,6 +17413,15 @@
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 1
 		},
+	"\/index.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/views\/includes\/_foot.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
