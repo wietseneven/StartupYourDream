@@ -19216,6 +19216,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/icons\/startupScreen.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3.97117e+06,
+		"inputAbbreviatedPath": "\/assets\/images\/icons\/startupScreen.png",
+		"outputAbbreviatedPath": "\/assets\/images\/icons\/startupScreen.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/nightlights-750m-europe.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
