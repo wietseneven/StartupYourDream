@@ -40,7 +40,7 @@ var app = {
 	error: function(errorText) {
 		app.getTemplate('popup', function(template) {
 			var context = {
-				title: 'Oeps, er ging iets mis',
+				title: 'Er ging iets mis',
 				body: errorText,
 				button: {
 					action: 'window.location.reload()',

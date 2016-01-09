@@ -19282,6 +19282,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/assets\/scripts\/components\/_video.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/scripts\/components\/_video.js",
+		"outputAbbreviatedPath": "\/assets\/scripts\/components\/min\/_video-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/assets\/scripts\/min\/app-min.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -19420,6 +19431,22 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0
 		},
+	"\/assets\/styles\/stylus\/components\/_video.styl": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"fileType": 8,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"importCSS": 0,
+		"inputAbbreviatedPath": "\/assets\/styles\/stylus\/components\/_video.styl",
+		"outputAbbreviatedPath": "\/assets\/styles\/stylus\/css\/_video.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"resolveRelativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0
+		},
 	"\/assets\/styles\/stylus\/libs\/_normalize.styl": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -19521,15 +19548,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/views\/templates\/popup.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/views\/templates\/popup.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/views\/templates\/source\/button.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -19600,14 +19618,20 @@
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/assets\/scripts\/stages\/_stages.js",
+			"linkedFileAbbreviatedPath": "\/assets\/scripts\/components\/_video.js",
 			"position": 3,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/assets\/scripts\/stages\/_stage1.js",
+			"linkedFileAbbreviatedPath": "\/assets\/scripts\/stages\/_stages.js",
 			"position": 4,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/assets\/scripts\/stages\/_stage1.js",
+			"position": 5,
 			"type": 0
 			}
 		]

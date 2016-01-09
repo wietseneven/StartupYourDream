@@ -4,8 +4,12 @@
 	{{/if}}
 	.body
 		{{#if video }}
-		video(preload, autoplay).video
-			source(src="/assets/videos/stage1/rabit.mp4" type="video/mp4")
+		video(preload, autoplay, id="{{ id }}"	).video
+			source(src="/assets/videos/{{ videoSrc }}" type="video/mp4")
+		#videoControls
+			#play
+			#pause
+			#replay
 		{{else}}
 		.inner
 			header
@@ -13,3 +17,6 @@
 			p.font-futura-heavy-oblique {{ body }}
 			button(onClick="{{ button.action }}") {{ button.text }}
 		{{/if}}
+	{{#if video }}
+	button.hidden.belowPopup(onClick="{{ button.action }}") {{ button.text }}
+	{{/if}}

@@ -1,18 +1,18 @@
 .popup
-  width 100vw
-  height 100vh
+  width    100vw
+  height   100vh
   position absolute
-  top 0
-  left 0
-  display flex
+  top      0
+  left     0
+  display  flex
   .overlay
     position absolute
-    width 100vw
-    height 100vh
-    top 0
-    left 0
+    width      100vw
+    height     100vh
+    top        0
+    left       0
     background url(../../images/nightlights-background.jpg) center center/cover
-    filter blur(10px)
+    filter     blur(10px)
   .body
     position         relative
     width            350px
@@ -36,3 +36,12 @@
       margin-right    -15px
     .inner
       margin 0 auto
+  .belowPopup
+    width    350px
+    position absolute
+    left     0
+    right    0
+    margin   0 auto
+    bottom   50px
+    &.hidden
+      display none

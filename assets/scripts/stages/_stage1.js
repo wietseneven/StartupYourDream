@@ -25,16 +25,28 @@ var stage1 = {
 				stage: stage1
 			}, function() {
 				keypad.quit();
-				stage1.setIntroduction();
+				setTimeout(function() {
+					stage1.setIntroduction();
+				}, 500);
 			});
 		});
 	},
 	setIntroduction: function(data) {
 		app.getTemplate('popup', function(template) {
 			var context = {
-				video: true
+				video: true,
+				id: 'welcomeVideo',
+				videoSrc: 'stage1/rabit.mp4',
+				button: {
+					text:   'Ga door naar de volgende koffer',
+					action: 'window.location.reload()'
+				}
 			};
+			app.el.template.hide();
 			app.el.template.html(template(context));
+			app.el.template.fadeIn();
+			video.setup('welcomeVideo');
 		});
+
 	}
 };
