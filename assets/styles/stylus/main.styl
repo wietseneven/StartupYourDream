@@ -1,8 +1,26 @@
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,700,600,400italic,600italic')
+@require '_fonts.styl'
 @require 'libs/_normalize'
 @require '_vars'
 @require 'components/_grid.styl'
 @require 'components/_keypad.styl'
+@require 'components/_popup.styl'
+@require 'components/_button.styl'
+
+html
+  font-size: 62.5%
 body
   background url(../../images/nightlights-background.jpg) center center/cover
   font-family font-family
+  font-size 1.4rem
+
+h1, h2
+  font-family headFont
+
+h2
+  font-size 5.5rem
+  font-weight normal
+  margin-bottom 0
+
+p
+  font-size: 1.7rem
+  line-height: 2.2rem

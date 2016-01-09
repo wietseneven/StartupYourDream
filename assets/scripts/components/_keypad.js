@@ -5,17 +5,39 @@ var keypad = {
 		key: '',
 		typed: 0
 	},
-	setup: function() {
+	commingFrom: '',
+	callback: '',
+	setup: function(args, callback) {
 		console.log('initiated keypad');
-		keypad.renderKeypad();
+		keypad.commingFrom = function() { 'stage'+args.stage.setup()};
+		keypad.callback = callback;
+		keypad.renderKeypad(args);
 	},
-	renderKeypad: function() {
-		app.getTemplate('/views/templates/keypad.html', function(template) {
+	renderKeypad: function(args) {
+		app.getTemplate('keypad', function(template) {
 			console.log('rendering keypad template');
-			app.el.template.html(template);
+
+			var context = {};
+			if (args.fadeIn){
+				context.hidden = true
+			}
+			app.el.template.html(template(context));
 
 			keypad.assignSelectors();
 			keypad.watchKeys();
+
+			if (args.fadeIn){
+				var i = 0;
+				keypad.el.keys.addClass('hidden');
+				keypad.el.keys.each(function() {
+					var key = $(this);
+					setTimeout(function() {
+						key.removeClass('hidden');
+					}, i * 10);
+					i++;
+				});
+				keypad.el.keypad.fadeIn('fast');
+			}
 		});
 	},
 	assignSelectors: function() {
@@ -41,12 +63,19 @@ var keypad = {
 		console.log('handling key '+key);
 		if(keypad.ifUndo(key)){
 			keypad.undoNumber();
+		} else if (keypad.ifCancel(key)) {
+			keypad.el.keypad.fadeOut('fast', function(){
+				keypad.commingFrom();
+			});
 		} else {
 			keypad.newNumber(key);
 		}
 	},
 	ifUndo: function(key) {
 		return key === 'undo';
+	},
+	ifCancel: function(key) {
+		return key === 'cancel';
 	},
 	undoNumber: function() {
 		console.log('Undoing last keypress');
@@ -66,8 +95,24 @@ var keypad = {
 
 		}
 	},
+	hideKeys: function() {
+		var i = 0;
+		keypad.el.keys.each(function() {
+			var key = $(this);
+			setTimeout(function() {
+				key.addClass('hidden');
+			}, i * 10);
+			i++;
+		});
+	},
 	handleSubmit: function() {
-		interact.user.check(keypad.keys.key);
+		keypad.hideKeys();
+		keypad.el.resultBox.addClass('loading');
+		var data = interact.user.check(keypad.keys.key);
+		if (keypad.callback) keypad.callback(data);
+	},
+	quit: function() {
+		keypad.el.keypad.fadeOut('fast');
 	}
 };
-keypad.setup();
+//keypad.setup();

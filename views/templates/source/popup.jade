@@ -1,0 +1,15 @@
+.popup
+	{{#if overlay}}
+	.overlay
+	{{/if}}
+	.body
+		{{#if video }}
+		video(preload, autoplay).video
+			source(src="/assets/videos/stage1/rabit.mp4" type="video/mp4")
+		{{else}}
+		.inner
+			header
+				h2 {{ title }}
+			p.font-futura-heavy-oblique {{ body }}
+			button(onClick="{{ button.action }}") {{ button.text }}
+		{{/if}}

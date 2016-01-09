@@ -8,7 +8,7 @@ var interact = {
 					authCode: authCode
 				},
 				function(data, status) {
-					alert("Data: " + data + "\nStatus: " + status);
+					return data;
 				}
 			);
 		}

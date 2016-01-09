@@ -12,6 +12,9 @@
   left 0
   right 0
   bottom keySizeHeight
+  h4
+    text-align center
+    color #fff
   .keyRow
     display flex
     flex-direction row
@@ -20,6 +23,10 @@
       margin keymargin
       width keySizeWidth
       height keySizeHeight
+      transition opacity 240ms ease-out
+      &.hidden {
+        opacity 0
+      }
     .key[data-num]
       background brandLight
       position relative
@@ -40,7 +47,7 @@
       img
         content inherit
         height 30%
-    .key[data-num="undo"]
+    .key[data-num="undo"], .key[data-num="cancel"]
       &:before
         content: none
 
@@ -53,9 +60,31 @@
     justify-content flex-start
     margin-bottom keymargin
     font-weight bold
+    position relative
+    &.loading
+      &:after
+        content ""
+        position absolute
+        width 50px
+        height 50px
+        background url('../../bower_components/open-iconic/svg/loop-circular.svg') center center/contain no-repeat
+        left 0
+        right 0
+        margin auto
+        top 120%
+        animation spin 1s linear infinite reverse
     span
       display block
       width keySizeWidth
       margin keymargin
       text-align center
       align-self center
+
+@keyframes spin {
+  from {
+    transform rotate(0deg)
+  }
+  to {
+    transform rotate(359deg)
+  }
+}
