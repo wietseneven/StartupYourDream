@@ -3,11 +3,12 @@ var interact = {
 	user: {
 		check: function(authCode) {
 			console.log(authCode);
-			$.post("api/request.php", {
+			$.post("https://app.wathebikaande.eu/api/request.php", {
 					type	: 'user',
 					authCode: authCode
 				},
 				function(data, status) {
+					alert(data + '\n' + status);
 					return data;
 				}
 			);

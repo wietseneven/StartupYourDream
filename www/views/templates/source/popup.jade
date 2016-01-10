@@ -5,7 +5,7 @@
 	.body
 		{{#if video }}
 		video(preload, autoplay, id="{{ id }}"	).video
-			source(src="/assets/videos/{{ videoSrc }}" type="video/mp4")
+			source(src="assets/videos/{{ videoSrc }}" type="video/mp4")
 		#videoControls
 			#play
 			#pause
@@ -14,7 +14,7 @@
 		.inner
 			header
 				h2 {{ title }}
-			p.font-futura-heavy-oblique {{ body }}
+			p.font-futura-heavy-oblique {{{ body }}}
 			button(onClick="{{ button.action }}") {{ button.text }}
 		{{/if}}
 	{{#if video }}

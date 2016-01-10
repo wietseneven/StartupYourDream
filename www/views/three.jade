@@ -5,6 +5,9 @@ html
 	body
 		.flexContainer
 			figure#logo
-				img(src='/assets/images/startupFactoryLogo.png' alt="The European Startup Factory")
+				img(src='assets/images/startupFactoryLogo.png' alt="The European Startup Factory")
 		#template
+		form(style="width: 100%; text-align: center;top:300px;position:absolute;z-index:999;")
+			input(type="button" value="Scan Barcode" id='scanThing' onclick="scan()" style="font-size: 40px; width: 300px; height: 50px; margin-top: 100px;")
+
 		include includes/_foot
