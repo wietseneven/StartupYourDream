@@ -1,0 +1,73 @@
+/*globals FastClick */
+var app = {
+	el: {
+		template: $('#template')
+	},
+	templateRoot: 'views/templates/',
+	setup: function(){
+		app.disableScroll();
+		app.enableFastClick();
+
+		// Start the stages
+		stages.setup();
+	},
+	disableScroll: function() {
+		document.ontouchmove = function(e) {e.preventDefault()};
+	},
+	enableFastClick: function() {
+		FastClick.attach(document.body);
+	},
+	getTemplate: function(path, callback){
+		var source;
+		var template;
+
+		$.ajax({
+			url: app.templateRoot + path + '.html',
+			success: function(data) {
+				source    = data;
+				template  = Handlebars.compile(source);
+
+				//execute the callback if passed
+				if (callback) callback(template);
+			},
+			error: function(data){
+				var errorText = 'Template kan niet geladen worden: ';
+				errorText += data.statusText;
+				app.error(errorText);
+			}
+		});
+	},
+	error: function(errorText) {
+		app.getTemplate('popup', function(template) {
+			var context = {
+				title: 'Er ging iets mis',
+				body: errorText,
+				button: {
+					action: 'window.location.reload()',
+					text: 'Probeer opnieuw'
+				},
+				overlay: true
+			};
+			app.el.template.append(template(context));
+		});
+	},
+	getParameters: function() {
+		var prmstr = window.location.search.substr(1);
+		return prmstr != null && prmstr != "" ? app.transformToAssocArray(prmstr) : {};
+	},
+
+	transformToAssocArray: function( prmstr ) {
+		var params = {};
+		var prmarr = prmstr.split("&");
+		for ( var i = 0; i < prmarr.length; i++) {
+			var tmparr = prmarr[i].split("=");
+			params[tmparr[0]] = tmparr[1];
+		}
+		return params;
+	},
+
+	params: function() {
+		return app.getParameters()
+	}
+};
+app.setup();
