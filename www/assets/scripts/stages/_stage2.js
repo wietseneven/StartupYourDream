@@ -1,17 +1,17 @@
 var stage2 = {
 	setup: function() {
 		console.log('Setting up stage 1');
-		stage1.setLogin();
+		stage2.setLogin();
 	},
 	setLogin: function() {
 		app.el.template.children().fadeOut('fast', function() {
 			keypad.setup({
 				fadeIn: true,
-				stage: stage1
+				stage: stage2
 			}, function() {
 				keypad.quit();
 				setTimeout(function() {
-					stage1.setMap();
+					stage2.setMap();
 				}, 500);
 			});
 		});

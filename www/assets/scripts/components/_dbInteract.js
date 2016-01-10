@@ -3,7 +3,7 @@ var interact = {
 	user: {
 		check: function(authCode) {
 			console.log(authCode);
-			$.post("https://app.wathebikaande.eu/api/request.php", {
+			$.post("https://app.wathebikaande.eu/www/api/request.php", {
 					type	: 'user',
 					authCode: authCode
 				},
