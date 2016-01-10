@@ -19279,7 +19279,7 @@
 		"outputAbbreviatedPath": "\/assets\/scripts\/min\/app-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
+		"outputStyle": 2,
 		"syntaxCheckerStyle": 0
 		},
 	"\/assets\/scripts\/components\/_dbInteract.js": {
@@ -19524,7 +19524,7 @@
 		"shouldRunBless": 0
 		},
 	"\/assets\/styles\/stylus\/main.styl": {
-		"createSourceMap": 0,
+		"createSourceMap": 1,
 		"debugStyle": 0,
 		"fileType": 8,
 		"ignore": 0,
@@ -19534,10 +19534,10 @@
 		"outputAbbreviatedPath": "\/assets\/styles\/css\/main.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 1,
 		"resolveRelativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1
 		},
 	"\/index.html": {
 		"fileType": 8192,
