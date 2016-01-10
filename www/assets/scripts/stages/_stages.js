@@ -17,7 +17,7 @@ var stages = {
 				break;
 			default:
 				console.log('This stage is not defined');
-				app.error('Deze stage bestaat nog niet <br><a href="?stage=1">Stage 1</a><br><a href="three.html">Three.html</a>');
+				app.error('Deze stage bestaat nog niet <br><a href="?stage=1">Stage 1</a><br><a href="?stage=2">Stage 2</a><br><a href="three.html">Three.html</a>');
 		}
 	}
 };
