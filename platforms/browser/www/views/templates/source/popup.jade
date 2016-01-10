@@ -1,0 +1,22 @@
+.popup
+	{{#if overlay}}
+	.overlay
+	{{/if}}
+	.body
+		{{#if video }}
+		video(preload, autoplay, id="{{ id }}"	).video
+			source(src="assets/videos/{{ videoSrc }}" type="video/mp4")
+		#videoControls
+			#play
+			#pause
+			#replay
+		{{else}}
+		.inner
+			header
+				h2 {{ title }}
+			p.font-futura-heavy-oblique {{{ body }}}
+			button(onClick="{{ button.action }}") {{ button.text }}
+		{{/if}}
+	{{#if video }}
+	button.hidden.belowPopup(onClick="{{ button.action }}") {{ button.text }}
+	{{/if}}

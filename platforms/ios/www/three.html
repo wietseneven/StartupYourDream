@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The European Startup Factory</title>
+    <link href="./assets/styles/css/main.css" rel="stylesheet">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="robots" content="noindex">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="initial-scale = 1, user-scalable = no">
+    <link rel="apple-touch-icon" href="assets/images/icons/icon152.png">
+    <link rel="apple-touch-startup-image" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2)" href="assets/images/icons/startupScreen.png">
+    <link href="assets/images/icons/startupScreenPortrait.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) and (-webkit-min-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <link href="assets/images/icons/startupScreen.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+  </head>
+  <body>
+    <div class="flexContainer">
+      <figure id="logo"><img src="assets/images/startupFactoryLogo.png" alt="The European Startup Factory"></figure>
+    </div>
+    <div id="template"></div>
+    <form style="width: 100%; text-align: center;top:300px;position:absolute;z-index:999;">
+      <input type="button" value="Scan Barcode" id="scanThing" onclick="scan()" style="font-size: 40px; width: 300px; height: 50px; margin-top: 100px;">
+    </form>
+    <script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="assets/bower_components/handlebars.js/dist/handlebars.min.js"></script>
+    <script src="assets/bower_components/three.js/build/three.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="assets/scripts/min/app-min.js"></script>
+  </body>
+</html>

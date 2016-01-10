@@ -1,0 +1,11 @@
+vendor
+.rvmrc
+.DS_Store
+lib/handlebars/compiler/parser.js
+/tmp/
+/coverage/
+node_modules
+*.sublime-project
+*.sublime-workspace
+npm-debug.log
+sauce_connect.log*

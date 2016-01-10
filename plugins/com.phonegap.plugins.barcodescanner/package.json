@@ -1,0 +1,19 @@
+{
+  "name": "telerik-barcode-scanner",
+  "version": "1.0.0",
+  "description": "BarcodeScanner ==============",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Salesfloor/BarcodeScanner.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Salesfloor/BarcodeScanner/issues"
+  },
+  "homepage": "https://github.com/Salesfloor/BarcodeScanner"
+}
