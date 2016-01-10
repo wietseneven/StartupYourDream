@@ -42,7 +42,7 @@
 		},
 	"\/assets\/bower_components\/fastclick\/lib\/fastclick.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/bower_components\/fastclick\/lib\/fastclick.js",
 		"outputAbbreviatedPath": "\/assets\/bower_components\/fastclick\/lib\/min\/fastclick-min.js",
@@ -19539,15 +19539,6 @@
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 1
 		},
-	"\/index.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/res\/icon\/android\/icon-36-ldpi.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -20031,15 +20022,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/three.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/three.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/views\/includes\/_foot.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -20172,50 +20154,44 @@
 	"\/assets\/scripts\/app.js": [
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/assets\/bower_components\/fastclick\/lib\/fastclick.js",
+			"linkedFileAbbreviatedPath": "\/assets\/scripts\/components\/_dbInteract.js",
 			"position": 0,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/assets\/scripts\/components\/_dbInteract.js",
+			"linkedFileAbbreviatedPath": "\/assets\/scripts\/components\/_keypad.js",
 			"position": 1,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/assets\/scripts\/components\/_keypad.js",
+			"linkedFileAbbreviatedPath": "\/assets\/scripts\/components\/_video.js",
 			"position": 2,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/assets\/scripts\/components\/_video.js",
+			"linkedFileAbbreviatedPath": "\/assets\/scripts\/components\/_map.js",
 			"position": 3,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/assets\/scripts\/components\/_map.js",
+			"linkedFileAbbreviatedPath": "\/assets\/scripts\/stages\/_stages.js",
 			"position": 4,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/assets\/scripts\/stages\/_stages.js",
+			"linkedFileAbbreviatedPath": "\/assets\/scripts\/stages\/_stage1.js",
 			"position": 5,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/assets\/scripts\/stages\/_stage1.js",
-			"position": 6,
-			"type": 0
-			},
-		{
-			"followForSyntaxChecking": 1,
 			"linkedFileAbbreviatedPath": "\/assets\/scripts\/stages\/_stage2.js",
-			"position": 7,
+			"position": 6,
 			"type": 0
 			}
 		]
