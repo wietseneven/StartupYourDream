@@ -2,6 +2,6 @@
 $db = [
 	'host'      => 'localhost',
 	'name'      => 'startupYourDream',
-	'username'  => 'root',
-	'password'  => 'root'
+	'username'  => 'wnmm',
+	'password'  => 'QXemMGVt7SfEp6rE'
 ];
