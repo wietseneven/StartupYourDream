@@ -108,8 +108,10 @@ var keypad = {
 	handleSubmit: function() {
 		keypad.hideKeys();
 		keypad.el.resultBox.addClass('loading');
-		var data = interact.user.check(keypad.keys.key);
-		if (keypad.callback) keypad.callback(data);
+		var data = interact.user.check(keypad.keys.key, function() {
+			if (keypad.callback) keypad.callback(data);
+		});
+
 	},
 	quit: function() {
 		keypad.el.keypad.fadeOut('fast');

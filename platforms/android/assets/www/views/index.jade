@@ -3,11 +3,9 @@ doctype html
 html
 	include includes/_head
 	body
-		script
-			| var stage = 0;
+		#homeBTN(onclick='stages.listStages()' style='width:50px;height:50px;background:url(assets/bower_components/open-iconic/svg/account-logout.svg) center center/contain no-repeat;z-index:999;position:absolute;top:30px;left:15px;')
 		.flexContainer
 			figure#logo
 				img(src='assets/images/startupFactoryLogo.png' alt="The European Startup Factory")
 		#template
-			a(href='three.html') Three
 		include includes/_foot

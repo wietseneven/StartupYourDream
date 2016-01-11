@@ -12,6 +12,9 @@
         },
         "com.phonegap.plugins.barcodescanner": {
             "PACKAGE_NAME": "com.wietseneven.startupfactory"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.wietseneven.startupfactory"
         }
     },
     "dependent_plugins": {}

@@ -1,0 +1,13 @@
+h2 {{title}}
+{{#if startups}}
+ul
+	{{#each startups}}
+	li.card
+		header
+			h3 {{this.name}}
+		span Categorie: {{this.category}}
+		span Website: <a href="{{this.website}}" target="_blank">{{this.website}}</a>
+	{{/each}}
+{{else}}
+h3 Geen startups gevonden
+{{/if}}

@@ -1,1 +1,11 @@
-button(onClick="{{ action }}") {{ text }}
+div.twoColBtnGroup
+	.popup
+		.body
+			.inner
+				header
+					h2 {{ title }}
+				p.font-futura-heavy-oblique {{{ body }}}
+	.btnGroup
+		{{#each buttons}}
+		a.btn(href='{{action}}') {{text}}
+		{{/each}}

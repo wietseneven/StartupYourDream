@@ -1,4 +1,4 @@
-button
+button, .btn
   padding          17px 34px 15px 34px
   position         relative
   text-shadow      1px 2px 0 rgba(58, 45, 125, 0.2)
@@ -37,3 +37,23 @@ button
     outline none
     &:before
       opacity 1
+
+.twoColBtnGroup
+  width  80%
+  margin auto
+  .btnGroup
+    margin-top -70px
+  .btn
+    display       block
+    float         left
+    width         47.5%
+    box-sizing    border-box
+    text-align    center
+    margin-bottom 15px
+    &:nth-child(2n)
+      margin-left 5%
+  .popup
+    position relative
+    width    inherit
+    height   inherit
+    margin   0 auto

@@ -1,0 +1,51 @@
+.mapWrapper {
+  margin:0 auto;
+  position:relative;
+
+}
+
+#map {
+  float:left;
+  clear:both;
+  width:930px;
+  height:590px;
+}
+
+.point {
+  position:fixed;
+  display:none;
+  padding:10px 15px;
+  background:#f2f2f2;
+  font-size:14px;
+  font-weight:bold;
+  border:1px solid #262626;
+}
+
+#text {
+  width:500px;
+  height: 380px;
+  overflow: auto;
+  color #fff
+}
+
+.mapWrapper img {
+  float: left;
+  padding-right: 5px;
+  padding-top: 2px;
+}
+path
+  transition .2s
+  transform-origin center center
+path[fill="#bb2200"]
+  transform scale(1.2)
+
+#map
+  svg
+    path[data-grown='true']
+      //fill purple !important
+    //  animation disco .4s infinite alternate
+@keyframes disco
+  0%
+    transform scale(1)
+  100%
+    transform scale(2)

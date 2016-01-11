@@ -1,6 +1,6 @@
 <?php
+header('Access-Control-Allow-Origin: *');
 include('db.connect.php');
-
 $requestType = $_POST['type'];
 
 if ($requestType == 'user'):
