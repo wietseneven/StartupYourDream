@@ -4,7 +4,7 @@ var map = {
 		map.createThree();
 	},
 	scene: new THREE.Scene(),
-	camera: new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 ),
+	camera: new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.01, 1000 ),
 	createThree: function() {
 
 		var renderer = new THREE.WebGLRenderer({ alpha: true });
@@ -14,13 +14,15 @@ var map = {
 		var light = new THREE.AmbientLight( 0xffffff ); // soft white light
 		map.scene.add( light );
 
-		var geometry    = new THREE.SphereGeometry(0.75, 64, 64);
+		var geometry    = new THREE.SphereGeometry(1, 32, 32);
 		var material    = new THREE.MeshPhongMaterial();
-		material.map    = THREE.ImageUtils.loadTexture('assets/images/map/startupMap.jpg');
+		material.map    = THREE.ImageUtils.loadTexture('assets/images/map/earthmap1k.jpg');
 		var earthMesh   = new THREE.Mesh(geometry, material);
+		earthMesh.generateMipmaps = false;
 		map.scene.add(earthMesh);
 
-		map.camera.position.z = 1;
+
+		map.camera.position.z = 1.5;
 		earthMesh.rotation.y = 4.5;
 		earthMesh.rotation.x = 0.9;
 		var render = function () {

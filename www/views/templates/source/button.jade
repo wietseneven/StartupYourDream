@@ -1,1 +1,4 @@
-button(onClick="{{ action }}") {{ text }}
+div.twoColBtnGroup
+	{{#each buttons}}
+	a.btn(href='{{action}}') {{text}}
+	{{/each}}
