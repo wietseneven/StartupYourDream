@@ -1,7 +1,8 @@
 var stage2 = {
 	setup: function() {
 		console.log('Setting up stage 1');
-		stage2.setLogin();
+		//stage2.setLogin();
+		stage2.setMap();
 	},
 	setLogin: function() {
 		app.el.template.children().fadeOut('fast', function() {

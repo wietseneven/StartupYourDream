@@ -17247,6 +17247,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/map\/earthmap1k.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 344080,
+		"inputAbbreviatedPath": "\/assets\/images\/map\/earthmap1k.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/map\/earthmap1k.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/map\/startupMap.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.18673e+06,
+		"inputAbbreviatedPath": "\/assets\/images\/map\/startupMap.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/map\/startupMap.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/nightlights-750m-europe.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -17330,6 +17352,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/scripts\/components\/_video.js",
 		"outputAbbreviatedPath": "\/assets\/scripts\/components\/min\/_video-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/scripts\/libs\/three.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/scripts\/libs\/three.min.js",
+		"outputAbbreviatedPath": "\/assets\/scripts\/libs\/min\/three.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,

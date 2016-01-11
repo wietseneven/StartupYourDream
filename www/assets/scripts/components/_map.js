@@ -1,19 +1,38 @@
 var map = {
 	el: {},
 	setup: function() {
-		app.getTemplate('map', function(template) {
-			app.el.template.append(template);
+		map.createThree();
+	},
+	scene: new THREE.Scene(),
+	camera: new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 ),
+	createThree: function() {
 
-			map.setSelectors();
-			map.setSizes();
-		});
-	},
-	setSelectors: function() {
-		map.el.map = $('#map');
-	},
-	setSizes: function() {
-		var screenWidth = $(window).width();
-		var screenHeight = $(window).height();
-		map.el.map.width(screenWidth).height(screenHeight).attr({'width': screenWidth * 2, 'height': screenHeight * 2});
+		var renderer = new THREE.WebGLRenderer({ alpha: true });
+		renderer.setSize( window.innerWidth, window.innerHeight );
+		app.el.template.html( renderer.domElement );
+
+		var light = new THREE.AmbientLight( 0xffffff ); // soft white light
+		map.scene.add( light );
+
+		var geometry    = new THREE.SphereGeometry(0.75, 64, 64);
+		var material    = new THREE.MeshPhongMaterial();
+		material.map    = THREE.ImageUtils.loadTexture('assets/images/map/startupMap.jpg');
+		var earthMesh   = new THREE.Mesh(geometry, material);
+		map.scene.add(earthMesh);
+
+		map.camera.position.z = 1;
+		earthMesh.rotation.y = 4.5;
+		earthMesh.rotation.x = 0.9;
+		var render = function () {
+			requestAnimationFrame( render );
+
+			//earthMesh.rotation.y += 0.01;
+			//earthMesh.rotation.y += 0.01;
+
+			renderer.render(map.scene, map.camera);
+		};
+
+		render();
+
 	}
 };
