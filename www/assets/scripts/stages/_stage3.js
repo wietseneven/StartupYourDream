@@ -1,3 +1,31 @@
-/**
- * Created by wietse on 11-01-16.
- */
+var stage3 = {
+	setup: function() {
+		console.log('Setting up stage 3');
+		stage3.chooseBussinessCategory();
+	},
+	chooseBussinessCategory: function() {
+		app.getTemplate('button', function(template) {
+			var choices = {
+				title: 'Kies je bedrijfscategorie',
+				buttons: {
+					1: {
+						text: '3d printing'
+					},
+					2: {
+						text: 'Muziek/streaming'
+					},
+					3: {
+						text: 'Sociale netwerken'
+					},
+					4: {
+						text: 'Domotica'
+					},
+					5: {
+						text: 'Eurovisie songfestival'
+					}
+				}
+			};
+			app.el.template.html(template(choices));
+		});
+	}
+};

@@ -18264,6 +18264,12 @@
 			"linkedFileAbbreviatedPath": "\/assets\/scripts\/stages\/_stage2.js",
 			"position": 6,
 			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/assets\/scripts\/stages\/_stage3.js",
+			"position": 7,
+			"type": 0
 			}
 		]
 	},

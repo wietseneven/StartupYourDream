@@ -15,6 +15,10 @@ var stages = {
 				console.log("It's in stage 2");
 				stage2.setup();
 				break;
+			case 3:
+				console.log("It's in stage 2");
+				stage3.setup();
+				break;
 			default:
 				console.log('This stage is not defined');
 				stages.listStages();
@@ -24,8 +28,8 @@ var stages = {
 	listStages: function() {
 		app.getTemplate('button', function(template) {
 			var context = {
-				title: 'Er ging iets mis',
-				body: 'asdf',
+				title: 'Kies je stage',
+				body: 'Bierrr',
 				buttons: {
 					1: {
 						text: 'Stage 1',
@@ -59,8 +63,7 @@ var stages = {
 						text: 'Stage 8',
 						action: '?stage=8'
 					}
-				},
-				overlay: true
+				}
 			};
 			app.el.template.html(template(context));
 		});
