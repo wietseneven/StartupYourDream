@@ -39,8 +39,8 @@ var stage1 = {
 				videoSrc: 'stage1/rabit.mp4',
 				button: {
 					text:   'Ga door naar de volgende koffer',
-					action: "window.location.href = '/'"
-					//action: 'stage2.setup()'
+					//action: 'window.location.reload()'
+					action: 'stages.listStages()'
 				}
 			};
 			app.el.template.hide();

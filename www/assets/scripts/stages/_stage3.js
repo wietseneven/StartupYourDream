@@ -1,7 +1,12 @@
 var stage3 = {
 	setup: function() {
 		console.log('Setting up stage 3');
-		stage3.chooseBussinessCategory();
+		stage3.setLogin();
+	},
+	setLogin: function(){
+		app.login('stage3', function() {
+			stage3.chooseBussinessCategory();
+		});
 	},
 	chooseBussinessCategory: function() {
 		app.getTemplate('button', function(template) {

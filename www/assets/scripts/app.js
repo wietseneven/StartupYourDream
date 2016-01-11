@@ -68,6 +68,20 @@ var app = {
 
 	params: function() {
 		return app.getParameters()
+	},
+
+	login: function(curStage, callback) {
+		app.el.template.children().fadeOut('fast', function() {
+			keypad.setup({
+				fadeIn: true,
+				stage: curStage
+			}, function() {
+				keypad.quit();
+				setTimeout(function() {
+					callback();
+				}, 500);
+			});
+		});
 	}
 };
 app.setup();

@@ -19,16 +19,8 @@ var stage1 = {
 		});
 	},
 	setLogin: function() {
-		app.el.template.children().fadeOut('fast', function() {
-			keypad.setup({
-				fadeIn: true,
-				stage: stage1
-			}, function() {
-				keypad.quit();
-				setTimeout(function() {
-					stage1.setIntroduction();
-				}, 500);
-			});
+		app.login('stage1', function(){
+			stage1.setIntroduction();
 		});
 	},
 	setIntroduction: function(data) {
@@ -39,8 +31,8 @@ var stage1 = {
 				videoSrc: 'stage1/rabit.mp4',
 				button: {
 					text:   'Ga door naar de volgende koffer',
-					action: "window.location.href = '/'"
-					//action: 'stage2.setup()'
+					//action: 'window.location.reload()'
+					action: 'stages.listStages()'
 				}
 			};
 			app.el.template.hide();
