@@ -78,7 +78,9 @@ var app = {
 			}, function() {
 				keypad.quit();
 				setTimeout(function() {
+					app.el.template.hide();
 					callback();
+					app.el.template.fadeIn();
 				}, 500);
 			});
 		});
