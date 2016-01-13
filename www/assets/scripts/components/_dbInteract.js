@@ -13,6 +13,22 @@ var interact = {
 					return data;
 				}
 			);
+		},
+		postStatupChoices: function(authcode, startups) {
+			console.log(startups);
+			$.post("https://app.wathebikaande.eu/api/request.php", {
+					type	: 'user',
+					authCode: authCode
+				},
+				function(data, status) {
+					//	alert(data + '\n' + status);
+					callback();
+					return data;
+				}
+			);
+		},
+		getStartupChoices: function(userID) {
+
 		}
 	}
 };

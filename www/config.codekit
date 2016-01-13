@@ -17225,6 +17225,17 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
+	"\/assets\/data\/startups.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/data\/startups.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/assets\/data\/startups-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/assets\/images\/icons\/icon152.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -17576,6 +17587,22 @@
 		"importCSS": 0,
 		"inputAbbreviatedPath": "\/assets\/styles\/stylus\/components\/_map.styl",
 		"outputAbbreviatedPath": "\/assets\/styles\/stylus\/css\/_map.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"resolveRelativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0
+		},
+	"\/assets\/styles\/stylus\/components\/_marker.styl": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"fileType": 8,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"importCSS": 0,
+		"inputAbbreviatedPath": "\/assets\/styles\/stylus\/components\/_marker.styl",
+		"outputAbbreviatedPath": "\/assets\/styles\/stylus\/css\/_marker.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -18296,6 +18323,26 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
+		},
+	"\/views\/templates\/source\/startupMarker.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/views\/templates\/source\/startupMarker.jade",
+		"outputAbbreviatedPath": "\/views\/templates\/startupMarker.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 1
+		},
+	"\/views\/templates\/startupMarker.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/views\/templates\/startupMarker.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/views\/three.jade": {
 		"compileDebug": 1,

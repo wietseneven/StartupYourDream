@@ -55,7 +55,7 @@ var map = {
 				app.getTemplate('popup', function (template) {
 					var content = {
 						title: 'Europa',
-						body: 'Kies een land aan de rechterzijde'
+						body: 'Kies een land aan de linkerzijde'
 					};
 					console.dir(content);
 					map.el.text.html(template(content));
@@ -214,6 +214,11 @@ var map = {
 				}
 			}, 100);
 		}
+
+		setTimeout(function() {
+			map.getStartups();
+		}, 1000);
+
 	},
 	openModal: function(elID) {
 		var $this = $('#'+elID);
@@ -225,13 +230,14 @@ var map = {
 			height: $this.outerHeight()
 		};
 
-		$this.addClass('open').animate({
-			'top'       : '0',
-			'left'      : '15%',
-			'width'     : '70%',
-			'height'    : '100%'
-		}, 500);
+		//$this.addClass('open').animate({
+		//	'top'       : '0',
+		//	'left'      : '15%',
+		//	'width'     : '70%',
+		//	'height'    : '100%'
+		//}, 500);
 
+		$this.addClass('open');
 		var closeBtn = $('<button class="close">Sluiten</button>')
 			.click(function(event) {
 				event.stopPropagation();
@@ -240,15 +246,60 @@ var map = {
 
 		$this.append(closeBtn);
 
+		setTimeout(function() {
+			$this.find('h4').fadeIn('fast');
+			$this.find('.content').fadeIn('fast');
+		}, 1000);
 
 		//setTimeout(function() {
 		//	map.closeModal(elID, origDimensions);
 		//},10000);
+
+
 	},
 	closeModal: function(elID, origDimensions) {
 		var $this = $('#'+elID);
 		$this.removeClass('open');
+		$this.find('.content').fadeOut('fast');
+		$this.find('h4').fadeOut('fast');
 		$this.find('.close').fadeOut('fast');
-		$this.animate(origDimensions, 500);
+		//$this.animate(origDimensions, 500);
+	},
+	getStartups: function() {
+		$.getJSON('assets/data/startups.json', map.locateStartups);
+	},
+	locateStartups: function(data) {
+		$.each(data, function() {
+			var country = this.country;
+			var countryPath = $('#'+country);
+			var countryDimensions = {
+				x: countryPath.offset().left,
+				y: countryPath.offset().top,
+				width: countryPath[0].getBBox().width,
+				height: countryPath[0].getBBox().height
+			};
+
+			map.createMarker(countryDimensions, this);
+			console.log(countryDimensions);
+		});
+	},
+	createMarker: function(location, startup){
+		app.getTemplate('startupMarker', function(template){
+			var context = {
+				top:     location.y + (location.height / 2),
+				left:    location.x + (location.width / 2),
+				name:    startup.name,
+				logo:    startup.logo,
+				id:      startup.id,
+				content: startup.content,
+				category: startup.category
+			};
+
+			app.el.template.append(template(context));
+
+			$('#marker-'+startup.id).click(function() {
+				map.openModal('marker-'+startup.id);
+			});
+		});
 	}
 };

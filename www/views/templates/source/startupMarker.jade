@@ -1,0 +1,13 @@
+.marker(style='top: {{ top }}px; left: {{ left }}px;', id="marker-{{id}}")
+	//img(src="assets/images/startups/{{logo}}" alt="{{name}}")
+	header
+		{{#if logo}}
+		figure.logo
+			img(src='assets/images/startups/{{logo}}', alt='{{name}}', width='50')
+		{{/if}}
+		h3 {{name}}
+		h4 {{category}}
+		.headerBG
+			img(src='assets/images/startups/bgs/kitten.jpg' alt='{{name}}')
+	article.content
+		{{{content}}}
