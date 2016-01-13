@@ -1,0 +1,38 @@
+#map
+  float       left
+  clear       both
+  width       100vw
+  height      100vh
+  //background  brandDark
+  padding-top 20px
+  //border      15px solid brandLight
+  box-sizing  border-box
+  position    absolute
+  top         0
+  left        0
+  bottom      0
+  margin      auto
+  margin-left -20px
+  margin-top  100px
+  svg
+    path
+      transition       .4s
+      transform-origin center center
+      stroke           brandDark
+    path[data-active='false']
+      fill brandLight !important
+    path[fill='#cccccc']
+      fill #fff !important
+
+#text
+  width    40vw
+  top      0
+  align-self: flex-end;
+  .popup
+    position static
+    .body
+      position static
+      margin auto 0
+      h2
+        margin-top    -40px
+        margin-bottom 30px

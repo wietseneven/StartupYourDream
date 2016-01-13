@@ -14,6 +14,8 @@ var map = {
 		});
 	},
 	stateNames: [],
+	stateText: [],
+	stateModes: [],
 	createMapJSON: function() {
 		var stateURLs = [];
 		var stateModes = [];
@@ -50,17 +52,14 @@ var map = {
 				textAreaPadding = json.mapSettings.textAreaPadding;
 
 
-				if (useSideText == 'true') {
-					map.el.text.css({
-						'width': (parseFloat(textAreaWidth) - parseFloat(textAreaPadding * 2)) + 'px',
-						'height': (parseFloat(mapHeight) - parseFloat(textAreaPadding * 2)) + 'px',
-						'display': 'inline',
-						'float': 'right',
-						'padding': textAreaPadding + 'px'
-					});
-
-					map.el.text.html(json.defaultSideText);
-				}
+				app.getTemplate('popup', function (template) {
+					var content = {
+						title: 'Europa',
+						body: 'Kies een land aan de rechterzijde'
+					};
+					console.dir(content);
+					map.el.text.html(template(content));
+				});
 
 				var j = 0;
 				//Parse xml
@@ -70,10 +69,10 @@ var map = {
 						j++;
 					}
 
-					stateText.push($node.startups);
+					map.stateText.push($node.startups);
 					map.stateNames.push($node.stateName);
 					stateURLs.push($node.url);
-					stateModes.push($node.stateMode);
+					map.stateModes.push($node.stateMode);
 					stateColors.push('#' + $node.stateColor);
 					stateOverColors.push('#B20');
 					stateClickedColors.push('#b20');
@@ -86,6 +85,7 @@ var map = {
 
 
 		function createMap() {
+
 
 			//start map
 			var r = new ScaleRaphael('map', 646, 654),
@@ -105,9 +105,9 @@ var map = {
 				obj.attr(attributes);
 				arr[obj.id] = state;
 
-				if (stateModes[obj.id] == 'OFF') {
+				if (map.stateModes[obj.id] == 'OFF') {
 					obj.attr({
-						fill: offColor,
+						fill: '#ccc',
 						cursor: 'default'
 					});
 				} else {
@@ -115,48 +115,6 @@ var map = {
 					obj.attr({
 						fill: stateColors[obj.id],
 						d: '300'
-					});
-					obj.mouseout(function (e) {
-						if (this != current) {
-							this.animate({
-								fill: stateColors[this.id]
-							}, 500);
-						}
-					});
-					obj.click(function (e) {
-
-						//Reset scrollbar
-						var t = map.el.text[0];
-						t.scrollLeft = 0;
-						t.scrollTop = 0;
-
-						//Animate previous state out
-						if (current) {
-							current.css({
-								fill: stateColors[current.id]
-							});
-						}
-
-						//Animate next
-						this.animate({
-							fill: stateClickedColors[this.id]
-						}, 100);
-
-						var curID = this.id;
-						if (useSideText == 'true') {
-							app.getTemplate('mapText', function(template){
-								var content = {
-									title:    map.stateNames[curID],
-									startups: stateText[curID]
-								};
-								console.dir(content);
-								map.el.text.html(template(content));
-							});
-
-						} else {
-							window.location = stateURLs[this.id];
-							//window.open(stateURLs[this.id], '_blank');
-						}
 					});
 
 				}
@@ -167,22 +125,11 @@ var map = {
 		}
 
 		function resizeMap(paper) {
-
+			var mapWidth = $(window).width() * 0.65;
+			var mapHeight = $(window).height() * 0.9;
 			paper.changeSize(mapWidth, mapHeight, true, false);
 
-			if (useSideText == 'true') {
-				$(".mapWrapper").css({
-					'width': (parseFloat(mapWidth, 10) + parseFloat(textAreaWidth, 10)) + 'px',
-					'height': mapHeight + 'px'
-				});
-			} else {
-				$(".mapWrapper").css({
-					'width': mapWidth + 'px',
-					'height': mapHeight + 'px'
-				});
-			}
-
-		};
+		}
 
 	},
 	animateMap: function() {
@@ -191,14 +138,69 @@ var map = {
 		var i = 0;
 		var j = 0;
 		countriePaths.each(function() {
-			$this = $(this);
+			var $this = $(this);
 			countries[map.stateNames[i]] = {
 				top:  $this.offset().top,
 				left: $this.offset().left
 			};
 			$this.attr('id', map.stateNames[i].replace(/\s+/g, ''));
+			$this.attr('data-active', 'false');
 
 			i++;
+		});
+
+		countriePaths.click(function() {
+			var $this = $(this);
+			var curID = $this.index() - 2;
+
+			if(map.stateModes[curID] === "ON") {
+				countriePaths.each(function () {
+					$(this).attr('data-active', 'false');
+				});
+
+
+				$this.attr('data-active', 'true');
+
+				app.getTemplate('popup', function (template) {
+					var content = {
+						title: map.stateNames[curID],
+						startups: map.stateText[curID]
+					};
+					console.dir(content);
+					map.el.text.html(template(content));
+					var i = 0;
+
+					$('.startup').each(function() {
+						var $this = $(this);
+						var thisDimensions = {
+							x:      $this.offset().left,
+							y:	    $this.offset().top,
+							width:  $this.outerWidth(),
+							height: $this.outerHeight()
+						};
+
+						if (i == 1){
+							thisDimensions.x += thisDimensions.width;
+						}
+
+						$this.css({
+							top:  thisDimensions.y,
+							left: thisDimensions.x,
+							width: thisDimensions.width,
+							height: thisDimensions.height,
+							position: 'absolute'
+						});
+
+						$this.click(function() {
+							if (!$(this).hasClass("open")) {
+								map.openModal($this.attr('id'));
+							}
+						});
+
+						i++;
+					});
+				});
+			}
 		});
 
 		animate();
@@ -212,5 +214,41 @@ var map = {
 				}
 			}, 100);
 		}
+	},
+	openModal: function(elID) {
+		var $this = $('#'+elID);
+
+		var origDimensions = {
+			left:   $this.offset().left,
+			top:    $this.offset().top,
+			width:  $this.outerWidth(),
+			height: $this.outerHeight()
+		};
+
+		$this.addClass('open').animate({
+			'top'       : '0',
+			'left'      : '15%',
+			'width'     : '70%',
+			'height'    : '100%'
+		}, 500);
+
+		var closeBtn = $('<button class="close">Sluiten</button>')
+			.click(function(event) {
+				event.stopPropagation();
+				map.closeModal(elID, origDimensions);
+			});
+
+		$this.append(closeBtn);
+
+
+		//setTimeout(function() {
+		//	map.closeModal(elID, origDimensions);
+		//},10000);
+	},
+	closeModal: function(elID, origDimensions) {
+		var $this = $('#'+elID);
+		$this.removeClass('open');
+		$this.find('.close').fadeOut('fast');
+		$this.animate(origDimensions, 500);
 	}
 };

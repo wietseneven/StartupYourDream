@@ -1,51 +1,38 @@
-.mapWrapper {
-  margin:0 auto;
-  position:relative;
-
-}
-
-#map {
-  float:left;
-  clear:both;
-  width:930px;
-  height:590px;
-}
-
-.point {
-  position:fixed;
-  display:none;
-  padding:10px 15px;
-  background:#f2f2f2;
-  font-size:14px;
-  font-weight:bold;
-  border:1px solid #262626;
-}
-
-#text {
-  width:500px;
-  height: 380px;
-  overflow: auto;
-  color #fff
-}
-
-.mapWrapper img {
-  float: left;
-  padding-right: 5px;
-  padding-top: 2px;
-}
-path
-  transition .2s
-  transform-origin center center
-path[fill="#bb2200"]
-  transform scale(1.2)
-
 #map
+  float       left
+  clear       both
+  width       100vw
+  height      100vh
+  //background  brandDark
+  padding-top 20px
+  //border      15px solid brandLight
+  box-sizing  border-box
+  position    absolute
+  top         0
+  left        0
+  bottom      0
+  margin      auto
+  margin-left -20px
+  margin-top  100px
   svg
-    path[data-grown='true']
-      //fill purple !important
-    //  animation disco .4s infinite alternate
-@keyframes disco
-  0%
-    transform scale(1)
-  100%
-    transform scale(2)
+    path
+      transition       .4s
+      transform-origin center center
+      stroke           brandDark
+    path[data-active='false']
+      fill brandLight !important
+    path[fill='#cccccc']
+      fill #fff !important
+
+#text
+  width    40vw
+  top      0
+  align-self: flex-end;
+  .popup
+    position static
+    .body
+      position static
+      margin auto 0
+      h2
+        margin-top    -40px
+        margin-bottom 30px

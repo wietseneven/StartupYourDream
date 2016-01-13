@@ -71,7 +71,8 @@ var app = {
 	},
 
 	login: function(curStage, callback) {
-		app.el.template.children().fadeOut('fast', function() {
+	//	app.el.template.children().fadeOut('fast', function() {
+
 			keypad.setup({
 				fadeIn: true,
 				stage: curStage
@@ -83,7 +84,7 @@ var app = {
 					app.el.template.fadeIn();
 				}, 500);
 			});
-		});
+	//	});
 	}
 };
 app.setup();

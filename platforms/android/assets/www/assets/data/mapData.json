@@ -1,0 +1,242 @@
+{
+    "mapSettings": {
+      "mapWidth": "523",
+      "mapHeight": "500",
+      "offColor": "e2e2e2",
+      "strokeColor": "24221f",
+      "useSideText": "true",
+      "textAreaWidth": "300",
+      "textAreaHeight": "300",
+      "textAreaPadding": "10"
+    },
+    "defaultSideText": "<h1>Europe</h1><br /><p>EUROPE IS AWESOMEEE</p>",
+    "stateData": [
+      {
+        "stateName" : "Ierland",
+        "stateMode" : "ON",
+        "stateColor": "B000B5",
+        "startups"  : "<h1>Ierland</h1>"
+      },
+      {
+        "stateName" : "Verenigd Koninkrijk",
+        "stateMode" : "ON",
+        "stateColor": "BADA55",
+        "startups"  : "<h1>Verenigd Koninkrijk</h1>"
+      },
+      {
+        "stateName" : "Malta",
+        "stateMode" : "ON",
+        "stateColor": "C0FFEE",
+        "startups"  : "<h1>Malta</h1>"
+      },
+      {
+        "stateName" : "België",
+        "stateMode" : "ON",
+        "stateColor": "C55",
+        "startups"  : "<h1>België</h1>"
+      },
+      {
+        "stateName" : "Luxemburg",
+        "stateMode" : "ON",
+        "stateColor": "707020",
+        "startups"  : "<h1>Luxemburg</h1>"
+      },
+      {
+        "stateName" : "Portugal",
+        "stateMode" : "ON",
+        "stateColor": "101",
+        "startups"  : "<h1>Portugal</h1>"
+      },
+      {
+        "stateName" : "Noorwegen",
+        "stateMode" : "OFF"
+      },
+      {
+        "stateName" : "Servië",
+        "stateMode" : "OFF"
+      },
+      {
+        "stateName" : "Kosovo",
+        "stateMode" : "OFF"
+      },
+      {
+        "stateName" : "Zweden",
+        "stateMode" : "ON",
+        "stateColor": "FB1",
+        "startups"  : "<h1>Zweden</h1>"
+      },
+      {
+        "stateName" : "Andorra",
+        "stateMode" : "OFF"
+      },
+      {
+        "stateName" : "Albanië",
+        "stateMode" : "OFF"
+      },
+      {
+        "stateName" : "Bosnië",
+        "stateMode" : "OFF"
+      },
+      {
+        "stateName" : "Kroatië",
+        "stateMode" : "ON",
+        "stateColor": "EB01A5",
+        "startups"  : "<h1>Kroatië</h1>"
+      },
+      {
+        "stateName" : "Macedonië",
+        "stateMode" : "OFF"
+      },
+      {
+        "stateName" : "Bulgarije",
+        "stateMode" : "ON",
+        "stateColor": "D1E5E1",
+        "startups"  : "<h1>Bulgarije</h1>"
+      },
+      {
+        "stateName" : "Cyprus",
+        "stateMode" : "ON",
+        "stateColor": "60061E",
+        "startups"  : "<h1>Cyprus</h1>"
+      },
+      {
+        "stateName" : "Oostenrijk",
+        "stateMode" : "ON",
+        "stateColor": "10ADED",
+        "startups"  : "<h1>Oostenrijk</h1>"
+      },
+      {
+        "stateName" : "Tsjechië",
+        "stateMode" : "ON",
+        "stateColor": "1D1075",
+        "startups"  : "<h1>Tsjechië</h1>"
+      },
+      {
+        "stateName" : "Denemarken",
+        "stateMode" : "ON",
+        "stateColor": "1A1A1A",
+        "startups"  : "<h1>Denemarken</h1>"
+      },
+      {
+        "stateName" : "Hongarije",
+        "stateMode" : "ON",
+        "stateColor": "D11D05",
+        "startups"  : "<h1>Hongarije</h1>"
+      },
+      {
+        "stateName" : "Polen",
+        "stateMode" : "ON",
+        "stateColor": "C0FF33",
+        "startups"  : "<h1>Polen</h1>"
+      },
+      {
+        "stateName" : "Slowakije",
+        "stateMode" : "ON",
+        "stateColor": "C0D3C5",
+        "startups"  : "<h1>Slowakije</h1>"
+      },
+      {
+        "stateName" : "Slovenië",
+        "stateMode" : "ON",
+        "stateColor": "663399",
+        "startups"  : "<h1>Slovenië</h1>"
+      },
+      {
+        "stateName" : "Duitsland",
+        "stateMode" : "ON",
+        "stateColor": "208075",
+        "startups"  : "<h1>Duitsland</h1>"
+      },
+      {
+        "stateName" : "Liechtenstein",
+        "stateMode" : "OFF"
+      },
+      {
+        "stateName" : "Zwitserland",
+        "stateMode" : "OFF"
+      },
+      {
+        "stateName" : "Estland",
+        "stateMode" : "ON",
+        "stateColor": "DE1E7E",
+        "startups"  : "<h1>Estland</h1>"
+      },
+      {
+        "stateName" : "Letland",
+        "stateMode" : "ON",
+        "stateColor": "FECA1E",
+        "startups"  : "<h1>Letland</h1>"
+      },
+      {
+        "stateName" : "Litouwen",
+        "stateMode" : "ON",
+        "stateColor": "6A6",
+        "startups"  : "<h1>Litouwen</h1>"
+      },
+      {
+        "stateName" : "Roemenië",
+        "stateMode" : "ON",
+        "stateColor": "1CE",
+        "startups"  : "<h1>Roemenië</h1>"
+      },
+      {
+        "stateName" : "Montenegro",
+        "stateMode" : "OFF"
+      },
+      {
+        "stateName" : "Nederland",
+        "stateMode" : "ON",
+        "stateColor": "C01025",
+        "startups"  : [
+          {
+            "name"     : "Blendle",
+            "category" : "Journalistiek",
+            "logo"     : "blendle.svg",
+            "images"   : [
+              {
+                "Uno": "http://lorempixel.com/400/200/cats/"
+              },
+              {
+                "Dos" : "http://lorempixel.com/400/200/cats/"
+              }
+            ]
+          },
+          {
+            "name"     : "Cool Blue",
+            "category" : "Webwinkel",
+            "logo"     : "coolblue.svg"
+          }
+        ]
+      },
+      {
+        "stateName" : "Italië",
+        "stateMode" : "ON",
+        "stateColor": "A55",
+        "startups"  : "<h1>Italië</h1>"
+      },
+      {
+        "stateName" : "Griekenland",
+        "stateMode" : "ON",
+        "stateColor": "B01055",
+        "startups"  : "<h1>Griekenland</h1>"
+      },
+      {
+        "stateName" : "Frankrijk",
+        "stateMode" : "ON",
+        "stateColor": "71771E",
+        "startups"  : "<h1>Frankrijk</h1>"
+      },
+      {
+        "stateName" : "Spanje",
+        "stateMode" : "ON",
+        "stateColor": "B00B1E",
+        "startups"  : "<h1>Spanje</h1>"
+      },
+      {
+        "stateName" : "Finland",
+        "stateMode" : "ON",
+        "stateColor": "02AC1E",
+        "startups"  : "<h1>Finland</h1>"
+      }
+    ]
+}

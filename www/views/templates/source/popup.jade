@@ -15,7 +15,24 @@
 			header
 				h2 {{ title }}
 			p.font-futura-heavy-oblique {{{ body }}}
+			{{#if button}}
 			button(onClick="{{ button.action }}") {{ button.text }}
+			{{/if}}
+			{{#if startups}}
+			.startups
+				{{#each startups}}
+				div.startup(id="startup-{{@key}}")
+					header
+						{{#if this.logo}}
+						figure.logo
+							img(src='assets/images/startups/{{this.logo}}', alt='{{this.name}}', width='50')
+						{{/if}}
+						h3 {{this.name}}
+						h5 {{this.category}}
+						.headerBG
+							img(src='assets/images/startups/bgs/kitten.jpg' alt='{{this.name}}')
+				{{/each}}
+			{{/if}}
 		{{/if}}
 	{{#if video }}
 	button.hidden.belowPopup(onClick="{{ button.action }}") {{ button.text }}

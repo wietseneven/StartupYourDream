@@ -4,6 +4,7 @@ var stage3 = {
 		stage3.setLogin();
 	},
 	setLogin: function(){
+		console.log('setting up login in stage 3');
 		app.login('stage3', function() {
 			stage3.chooseBussinessCategory();
 		});

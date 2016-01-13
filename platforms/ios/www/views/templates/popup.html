@@ -1,1 +1,33 @@
-<div class="popup">{{#if overlay}}<div class="overlay"></div>{{/if}}<div class="body">{{#if video }}<video preload="preload" autoplay="autoplay" id="{{ id }}" class="video"><source src="assets/videos/{{ videoSrc }}" type="video/mp4"/></video><div id="videoControls"><div id="play"></div><div id="pause"></div><div id="replay"></div></div>{{else}}<div class="inner"><header><h2>{{ title }}</h2></header><p class="font-futura-heavy-oblique">{{{ body }}}</p><button onClick="{{ button.action }}">{{ button.text }}</button></div>{{/if}}</div>{{#if video }}<button onClick="{{ button.action }}" class="hidden belowPopup">{{ button.text }}</button>{{/if}}</div>
+
+<div class="popup">{{#if overlay}}
+  <div class="overlay"></div>{{/if}}
+  <div class="body">{{#if video }}
+    <video preload="preload" autoplay="autoplay" id="{{ id }}" class="video">
+      <source src="assets/videos/{{ videoSrc }}" type="video/mp4"/>
+    </video>
+    <div id="videoControls">
+      <div id="play"></div>
+      <div id="pause"></div>
+      <div id="replay"></div>
+    </div>{{else}}
+    <div class="inner">
+      <header>
+        <h2>{{ title }}</h2>
+      </header>
+      <p class="font-futura-heavy-oblique">{{{ body }}}</p>{{#if button}}
+      <button onClick="{{ button.action }}">{{ button.text }}</button>{{/if}}
+      {{#if startups}}
+      <div class="startups">{{#each startups}}
+        <div id="startup-{{@key}}" class="startup">
+          <header>{{#if this.logo}}
+            <figure class="logo"><img src="assets/images/startups/{{this.logo}}" alt="{{this.name}}" width="50"/></figure>{{/if}}
+            <h3>{{this.name}}</h3>
+            <h5>{{this.category}}</h5>
+            <div class="headerBG"><img src="assets/images/startups/bgs/kitten.jpg" alt="{{this.name}}"/></div>
+          </header>
+        </div>{{/each}}
+      </div>{{/if}}
+    </div>{{/if}}
+  </div>{{#if video }}
+  <button onClick="{{ button.action }}" class="hidden belowPopup">{{ button.text }}</button>{{/if}}
+</div>

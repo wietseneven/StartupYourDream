@@ -1,7 +1,7 @@
 {
     "mapSettings": {
-      "mapWidth": "646",
-      "mapHeight": "654",
+      "mapWidth": "523",
+      "mapHeight": "500",
       "offColor": "e2e2e2",
       "strokeColor": "24221f",
       "useSideText": "true",
@@ -9,7 +9,7 @@
       "textAreaHeight": "300",
       "textAreaPadding": "10"
     },
-    "defaultSideText": "<h1>Europe</h1><br /><p><b>Hotel Sagittis</b><br>Lorem ipsum dolor sit amet, ursa ted, consectetur adipi.<br /><br />Morbi sagittis, urna sed convallis tempor, diam enim vulputate massa, in imperdiet enim nisl vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elementum, lectus eget rhoncus faucibus arcu nulla dapibus nunc.</p><b>Ut quam ligula:</b><br /><br /><ul><li>Lorem ipsum</li><li>Suspendisse elementum</li><li>Ut quam ligula</li><li>In rutrum massa</li></ul><br /><p>Quisque viverra, nibh et laoreet venenatis, dolor odio pulvinar enim, in ultricies lorem diam ac augue. In rutrum massa eleifend neque congue tincidunt. Sed quis ipsum libero. Ut vel mauris orci.</p> <p>Suspendisse elementum, lectus eget rhoncus faucibus, turpis sem tempor erat, quis lobortis dui felis non ligula.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam ligula, porttitor vel rhoncus quis, pellentesque a libero.</p><p>Nam luctus, neque mattis facilisis aliquam, arcu nulla dapibus nunc, consequat imperdiet quam nisi in eros. Nullam velit enim, dignissim aliquet mollis in, dictum vitae mauris. Quisque viverra, nibh et laoreet venenatis, dolor odio pulvinar enim, in ultricies lorem diam ac augue.</p><p>In rutrum massa eleifend neque congue tincidunt. Sed quis ipsum libero. Ut vel mauris orci. Suspendisse elementum, lectus eget rhoncus faucibus, turpis sem tempor erat, quis lobortis dui felis non ligula.</p>",
+    "defaultSideText": "<h1>Europe</h1><br /><p>EUROPE IS AWESOMEEE</p>",
     "stateData": [
       {
         "stateName" : "Ierland",
@@ -191,7 +191,20 @@
           {
             "name"     : "Blendle",
             "category" : "Journalistiek",
-            "website"  : "http://blendle.nl"
+            "logo"     : "blendle.svg",
+            "images"   : [
+              {
+                "Uno": "http://lorempixel.com/400/200/cats/"
+              },
+              {
+                "Dos" : "http://lorempixel.com/400/200/cats/"
+              }
+            ]
+          },
+          {
+            "name"     : "Cool Blue",
+            "category" : "Webwinkel",
+            "logo"     : "coolblue.svg"
           }
         ]
       },

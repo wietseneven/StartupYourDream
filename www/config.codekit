@@ -17214,393 +17214,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/assets\/bower_components\/threex.planets\/examples\/atmospherematerial.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/examples\/atmospherematerial.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/bower_components\/threex.planets\/examples\/basic.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/examples\/basic.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/bower_components\/threex.planets\/examples\/earth.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/examples\/earth.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/bower_components\/threex.planets\/examples\/select.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/examples\/select.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/bower_components\/threex.planets\/examples\/vendor\/three.js\/build\/three.min.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/examples\/vendor\/three.js\/build\/three.min.js",
-		"outputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/examples\/vendor\/three.js\/build\/min\/three.min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/assets\/bower_components\/threex.planets\/examples\/vendor\/three.js\/examples\/js\/libs\/dat.gui.min.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/examples\/vendor\/three.js\/examples\/js\/libs\/dat.gui.min.js",
-		"outputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/examples\/vendor\/three.js\/examples\/js\/libs\/min\/dat.gui.min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/assets\/bower_components\/threex.planets\/images\/earthbump1k.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 91237,
-		"inputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/earthbump1k.jpg",
-		"outputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/earthbump1k.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/bower_components\/threex.planets\/images\/earthcloudmap.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 235109,
-		"inputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/earthcloudmap.jpg",
-		"outputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/earthcloudmap.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/bower_components\/threex.planets\/images\/earthcloudmaptrans.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 184128,
-		"inputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/earthcloudmaptrans.jpg",
-		"outputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/earthcloudmaptrans.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/bower_components\/threex.planets\/images\/earthmap1k.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 344080,
-		"inputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/earthmap1k.jpg",
-		"outputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/earthmap1k.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/bower_components\/threex.planets\/images\/earthspec1k.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 116543,
-		"inputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/earthspec1k.jpg",
-		"outputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/earthspec1k.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/bower_components\/threex.planets\/images\/galaxy_starfield.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 673311,
-		"inputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/galaxy_starfield.png",
-		"outputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/galaxy_starfield.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/bower_components\/threex.planets\/images\/jupitermap.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 157780,
-		"inputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/jupitermap.jpg",
-		"outputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/jupitermap.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/bower_components\/threex.planets\/images\/marsbump1k.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 140596,
-		"inputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/marsbump1k.jpg",
-		"outputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/marsbump1k.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/bower_components\/threex.planets\/images\/marsmap1k.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 525256,
-		"inputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/marsmap1k.jpg",
-		"outputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/marsmap1k.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/bower_components\/threex.planets\/images\/mercurybump.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 194108,
-		"inputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/mercurybump.jpg",
-		"outputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/mercurybump.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/bower_components\/threex.planets\/images\/mercurymap.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 285975,
-		"inputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/mercurymap.jpg",
-		"outputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/mercurymap.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/bower_components\/threex.planets\/images\/moonbump1k.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 385822,
-		"inputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/moonbump1k.jpg",
-		"outputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/moonbump1k.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/bower_components\/threex.planets\/images\/moonmap1k.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 403689,
-		"inputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/moonmap1k.jpg",
-		"outputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/moonmap1k.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/bower_components\/threex.planets\/images\/neptunemap.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 48069,
-		"inputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/neptunemap.jpg",
-		"outputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/neptunemap.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/bower_components\/threex.planets\/images\/plutobump1k.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 226980,
-		"inputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/plutobump1k.jpg",
-		"outputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/plutobump1k.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/bower_components\/threex.planets\/images\/plutomap1k.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 325111,
-		"inputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/plutomap1k.jpg",
-		"outputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/plutomap1k.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/bower_components\/threex.planets\/images\/saturnmap.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 70548,
-		"inputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/saturnmap.jpg",
-		"outputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/saturnmap.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/bower_components\/threex.planets\/images\/saturnringcolor.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 9307,
-		"inputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/saturnringcolor.jpg",
-		"outputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/saturnringcolor.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/bower_components\/threex.planets\/images\/sunmap.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 281479,
-		"inputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/sunmap.jpg",
-		"outputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/sunmap.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/bower_components\/threex.planets\/images\/uranusmap.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 8942,
-		"inputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/uranusmap.jpg",
-		"outputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/uranusmap.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/bower_components\/threex.planets\/images\/uranusringcolour.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 6659,
-		"inputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/uranusringcolour.jpg",
-		"outputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/uranusringcolour.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/bower_components\/threex.planets\/images\/venusbump.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 251909,
-		"inputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/venusbump.jpg",
-		"outputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/venusbump.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/bower_components\/threex.planets\/images\/venusmap.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 255067,
-		"inputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/venusmap.jpg",
-		"outputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/images\/venusmap.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/bower_components\/threex.planets\/min\/threex.planets-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/min\/threex.planets-min.js",
-		"outputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/min\/min\/threex.planets-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/assets\/bower_components\/threex.planets\/package.require.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/package.require.js",
-		"outputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/min\/package.require-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/assets\/bower_components\/threex.planets\/README.md": {
-		"criticStyle": 0,
-		"enableFootnotes": 1,
-		"enableLabels": 1,
-		"enableSmartQuotes": 1,
-		"escapeLineBreaks": 0,
-		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/README.md",
-		"maskEmailAddresses": 1,
-		"outputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/README.html",
-		"outputFormat": 0,
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"parseMetadata": 1,
-		"processHTML": 0,
-		"randomFootnoteNumbers": 0,
-		"useCompatibilityMode": 0
-		},
-	"\/assets\/bower_components\/threex.planets\/threex.atmospheredatgui.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/threex.atmospheredatgui.js",
-		"outputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/min\/threex.atmospheredatgui-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/assets\/bower_components\/threex.planets\/threex.atmospherematerial.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/threex.atmospherematerial.js",
-		"outputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/min\/threex.atmospherematerial-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/assets\/bower_components\/threex.planets\/threex.planets.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/threex.planets.js",
-		"outputAbbreviatedPath": "\/assets\/bower_components\/threex.planets\/min\/threex.planets-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/assets\/data\/mapData.json": {
 		"fileType": 524288,
 		"ignore": 1,
@@ -17674,6 +17287,17 @@
 		"initialSize": 73149,
 		"inputAbbreviatedPath": "\/assets\/images\/startupFactoryLogo.png",
 		"outputAbbreviatedPath": "\/assets\/images\/startupFactoryLogo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/startups\/bgs\/kitten.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 55037,
+		"inputAbbreviatedPath": "\/assets\/images\/startups\/bgs\/kitten.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/startups\/bgs\/kitten.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -17959,6 +17583,22 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0
 		},
+	"\/assets\/styles\/stylus\/components\/_modal.styl": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"fileType": 8,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"importCSS": 0,
+		"inputAbbreviatedPath": "\/assets\/styles\/stylus\/components\/_modal.styl",
+		"outputAbbreviatedPath": "\/assets\/styles\/stylus\/css\/_modal.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"resolveRelativeURLS": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1
+		},
 	"\/assets\/styles\/stylus\/components\/_popup.styl": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -17972,8 +17612,8 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"resolveRelativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1
 		},
 	"\/assets\/styles\/stylus\/components\/_video.styl": {
 		"createSourceMap": 0,
@@ -17988,8 +17628,8 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"resolveRelativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1
 		},
 	"\/assets\/styles\/stylus\/libs\/_normalize.styl": {
 		"createSourceMap": 0,
@@ -18644,17 +18284,6 @@
 		"outputAbbreviatedPath": "\/views\/templates\/map.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 1
-		},
-	"\/views\/templates\/source\/mapText.jade": {
-		"compileDebug": 1,
-		"fileType": 512,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/views\/templates\/source\/mapText.jade",
-		"outputAbbreviatedPath": "\/views\/templates\/mapText.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
 		},
 	"\/views\/templates\/source\/popup.jade": {
@@ -18666,7 +18295,7 @@
 		"outputAbbreviatedPath": "\/views\/templates\/popup.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 1
+		"outputStyle": 0
 		},
 	"\/views\/three.jade": {
 		"compileDebug": 1,
