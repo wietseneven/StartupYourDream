@@ -6,7 +6,6 @@ if ($_POST['type']):
 	$requestType = $_POST['type'];
 elseif ($_GET):
 	$requestType = $_GET['type'];
-	//var_dump( $_GET );
 endif;
 
 if ($requestType == 'user'):
@@ -59,7 +58,6 @@ elseif ($requestType == 'startups'):
 	$authCode = $_GET['authCode'];
 	$startups = $_GET['startups'];
 
-	echo $startups;
 	if(!$authCode || !$startups){
 		echo 'No authcode or startups given';
 		die;
@@ -90,7 +88,7 @@ elseif ($requestType == 'startups'):
 	");
 
 	// voeg parameters toe aan je statement
-	$insertParams = array($authCode, 0, $authCode);
+	$insertParams = array($authCode, $startups, $authCode);
 	$getUserParams = array($authCode);
 	// voer de statement met de parameters uit
 	$insertQuery->execute($insertParams);
