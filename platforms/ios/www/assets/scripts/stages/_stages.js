@@ -32,6 +32,14 @@ var stages = {
 				console.log("It's in stage 6");
 				stage6.setup();
 				break;
+			case 7:
+				console.log("It's in stage 7");
+				stage7.setup();
+				break;
+			case 8:
+				console.log("It's in stage 8");
+				stage8.setup();
+				break;
 			default:
 				console.log('This stage is not defined');
 				stages.listStages();

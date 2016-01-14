@@ -118,7 +118,7 @@ var stage3 = {
 				stage3.setTitlePos($('.btn.positionSet'), true);
 				map.el.text.removeClass('starting');
 			});
-		}, 500);
+		}, 1200);
 
 	},
 	selectedCountry: function(countryname){
