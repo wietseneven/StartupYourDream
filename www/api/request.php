@@ -72,6 +72,10 @@ elseif ($requestType == 'startups'):
 			WHERE
 				authCode=?
 	    ");
+
+		$insertParams = array($startups, $stage, $authCode);
+		// voer de statement met de parameters uit
+		$insertQuery->execute($insertParams);
 	}
 
 	$getUserQuery = $db->prepare("
@@ -84,10 +88,9 @@ elseif ($requestType == 'startups'):
 	");
 
 	// voeg parameters toe aan je statement
-	$insertParams = array($startups, $stage, $authCode);
+
 	$getUserParams = array($authCode);
-	// voer de statement met de parameters uit
-	$insertQuery->execute($insertParams);
+
 
 	$getUserQuery->execute($getUserParams);
 	// sla het resultaat op in een array
