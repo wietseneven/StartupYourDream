@@ -70,12 +70,12 @@ if ($requestType == 'user') {
 			UPDATE
 				users
 			SET
-				?=?,
+				startups=?,
 				stage=?
 			WHERE
 				authCode=?
 	    ");
-		$insertParams = array('startups', $startups, $stage, $authCode);
+		$insertParams = array($startups, $stage, $authCode);
 		// voer de statement met de parameters uit
 		$insertQuery->execute($insertParams);
 	}
