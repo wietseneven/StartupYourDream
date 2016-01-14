@@ -58,20 +58,21 @@ elseif ($requestType == 'startups'):
 	$authCode = $_POST['authCode'];
 	$startups = $_POST['startups'];
 	$stage    = $_POST['stage'];
-	if(!$authCode || !$startups){
+	if(!$authCode){
 		echo 'No authcode or startups given';
 		die;
 	}
-
-	$insertQuery = $db->prepare("
-		UPDATE
-			users
-		SET
-			startups=?,
-			stage=?
-		WHERE
-			authCode=?
-  	");
+	if(!$startups) {
+		$insertQuery = $db->prepare("
+			UPDATE
+				users
+			SET
+				startups=?,
+				stage=?
+			WHERE
+				authCode=?
+	    ");
+	}
 
 	$getUserQuery = $db->prepare("
 		SELECT
