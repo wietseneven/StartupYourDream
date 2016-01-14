@@ -1,1 +1,3 @@
-<div class="twoColBtnGroup"><div class="popup"><div class="body"><div class="inner"><header><h2>{{ title }}</h2></header><p class="font-futura-heavy-oblique">{{{ body }}}</p></div></div></div><div class="btnGroup">{{#each buttons}}<a href="{{action}}" class="btn">{{text}}</a>{{/each}}</div></div>
+<div class="twoColBtnGroup"><div class="popup"><div class="body"><div class="inner"><header><h2>{{ title }}</h2></header><p class="font-futura-heavy-oblique">{{{ body }}}</p></div></div></div><div id="{{id}}" class="btnGroup">{{#each buttons}}
+{{#if href}}<a href="{{href}}" class="btn">{{text}}</a>{{else if action}}<button onclick="{{action}}" class="btn">{{text}}</button>{{else}}<button class="btn">{{text}}</button>{{/if}}
+{{/each}}</div></div>

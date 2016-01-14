@@ -1,16 +1,33 @@
 var map = {
 	el: {},
-	setup: function() {
-		map.loadTemplate();
-	},
-	loadTemplate: function() {
-		app.getTemplate('map', function(template){
+	clickable: false,
+	startups: false,
+	setup: function(location, clickable, startups) {
+		map.loadTemplate(location, clickable);
+		if(clickable){
+			map.clickable = true;
+		}
 
-			app.el.template.html(template);
+		if(startups){
+			map.startups = true;
+		}
+	},
+	loadTemplate: function(location, clickable) {
+		app.getTemplate('map', function(template){
+			if (location == 'full') {
+				app.el.template.html(template);
+			} else {
+				app.el.template.append(template);
+			}
 			map.createMapJSON();
 
 			map.el.text = $("#text");
 			map.el.map = $('#map');
+			setTimeout(function() {
+				map.el.map.animate({
+					'opacity': 1
+				}, 200);
+			}, 500);
 		});
 	},
 	stateNames: [],
@@ -27,8 +44,8 @@ var map = {
 						title: 'Europa',
 						body: 'Kies een land aan de linkerzijde',
 						button: {
-							text: 'hi',
-							action: 'stage2.postStartups()'
+							text: 'Ga door naar de volgende koffer',
+							action: 'window.location.reload()'
 						}
 					};
 					console.dir(content);
@@ -130,10 +147,15 @@ var map = {
 			}, 100);
 		}
 
-		setTimeout(function() {
-			map.getStartups();
-		}, 100);
-		//map.countryClick();
+		if (map.startups) {
+			setTimeout(function () {
+				map.getStartups();
+			}, 100);
+		}
+
+		if (map.clickable) {
+			map.countryClick();
+		}
 	},
 	countryClick: function() {
 		map.countriePaths.click(function() {
@@ -284,7 +306,7 @@ var map = {
 		console.log('Removing '+thisID+'-marker from string');
 
 		var str = map.selectedStartups;
-		str = str.replace(thisID+',', '');
+		str = str.replace(','+thisID, '');
 		str = str.replace(thisID, '');
 		map.selectedStartups = str;
 		$this.removeClass('selected');

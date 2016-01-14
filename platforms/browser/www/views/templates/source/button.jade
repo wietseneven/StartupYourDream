@@ -5,7 +5,13 @@ div.twoColBtnGroup
 				header
 					h2 {{ title }}
 				p.font-futura-heavy-oblique {{{ body }}}
-	.btnGroup
+	.btnGroup(id='{{id}}')
 		{{#each buttons}}
-		a.btn(href='{{action}}') {{text}}
+		{{#if href}}
+		a.btn(href='{{href}}') {{text}}
+		{{else if action}}
+		button.btn(onclick='{{action}}') {{text}}
+		{{else}}
+		button.btn {{text}}
+		{{/if}}
 		{{/each}}

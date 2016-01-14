@@ -11,10 +11,10 @@ var stage2 = {
 	},
 	setMap: function() {
 		console.log('autcode is: '+app.session.authCode);
-		map.setup();
+		map.setup('full', false, true);
 	},
 	postStartups: function() {
 		console.log('Choices = '+map.selectedStartups);
-		interact.user.postStartupChoices(app.session.authCode, map.selectedStartups, 2);
+		interact.user.postStartupChoices(app.session.authCode, 'startups', map.selectedStartups, 2);
 	}
 };

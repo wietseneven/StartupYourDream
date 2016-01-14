@@ -46,12 +46,20 @@ button, .btn
   .btn
     display       block
     float         left
-    width         47.5%
+    width         38vw
     box-sizing    border-box
     text-align    center
     margin-bottom 15px
     &:nth-child(2n)
-      margin-left 5%
+      margin-left 4vw
+    &.positionSet, &.positionSet:active, &.positionSet:hover
+      margin-left 0
+      background  none
+      border      none
+      font-size   30px
+      &:before, &:after
+        display none
+
   .popup
     position relative
     width    inherit

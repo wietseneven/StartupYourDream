@@ -9,8 +9,7 @@ div.twoColBtnGroup
 		{{#each buttons}}
 		{{#if href}}
 		a.btn(href='{{href}}') {{text}}
-		{{/if}}
-		{{#if action}}
+		{{else if action}}
 		button.btn(onclick='{{action}}') {{text}}
 		{{else}}
 		button.btn {{text}}

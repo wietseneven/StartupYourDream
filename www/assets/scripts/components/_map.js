@@ -1,16 +1,39 @@
 var map = {
 	el: {},
-	setup: function() {
-		map.loadTemplate();
-	},
-	loadTemplate: function() {
-		app.getTemplate('map', function(template){
+	clickable: false,
+	startups: false,
+	popupText: {},
+	setup: function(location, clickable, startups, popupText) {
+		map.loadTemplate(location);
+		if(clickable){
+			map.clickable = true;
+		}
 
-			app.el.template.html(template);
+		if(startups){
+			map.startups = true;
+		}
+
+
+		if(popupText){
+			map.popupText = popupText;
+		}
+	},
+	loadTemplate: function(location) {
+		app.getTemplate('map', function(template){
+			if (location == 'full') {
+				app.el.template.html(template);
+			} else {
+				app.el.template.append(template);
+			}
 			map.createMapJSON();
 
 			map.el.text = $("#text");
 			map.el.map = $('#map');
+			setTimeout(function() {
+				map.el.map.animate({
+					'opacity': 1
+				}, 200);
+			}, 500);
 		});
 	},
 	stateNames: [],
@@ -24,15 +47,15 @@ var map = {
 
 				app.getTemplate('popup', function (template) {
 					var content = {
-						title: 'Europa',
-						body: 'Kies een land aan de linkerzijde',
+						title: map.popupText.title,
+						body: map.popupText.body,
 						button: {
-							text: 'Ga door naar de volgende koffer',
-							action: 'window.location.reload()'
+							text: map.popupText.button,
+							//action: 'window.location.reload()'
 						}
 					};
-					console.dir(content);
-					map.el.text.html(template(content));
+					console.dir(map.popupText);
+					map.el.text.html(template(map.popupText));
 				});
 
 				var j = 0;
@@ -130,10 +153,15 @@ var map = {
 			}, 100);
 		}
 
-		setTimeout(function() {
-			map.getStartups();
-		}, 100);
-		//map.countryClick();
+		if (map.startups) {
+			setTimeout(function () {
+				map.getStartups();
+			}, 100);
+		}
+
+		if (map.clickable) {
+			map.countryClick();
+		}
 	},
 	countryClick: function() {
 		map.countriePaths.click(function() {
