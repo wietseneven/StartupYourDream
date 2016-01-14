@@ -12,7 +12,7 @@ var stage6 = {
 		app.getTemplate('popup', function(template){
 			var context = {
 				video: true,
-				id: 'welcomeVideo',
+				id: 'stage6Video',
 				videoSrc: 'stage6/stage6.mp4',
 				button: {
 					text:   'Wat nu? Ga door naar de volgende koffer',
@@ -21,6 +21,7 @@ var stage6 = {
 				}
 			};
 			app.el.template.html(template(context));
+			video.setup('stage6Video');
 		});
 	}
 };
