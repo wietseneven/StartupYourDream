@@ -61,6 +61,7 @@ elseif ($requestType == 'startups'):
 
 	echo $startups;
 	if(!$authCode || !$startups){
+		echo 'No authcode or startups given';
 		die;
 	}
 
