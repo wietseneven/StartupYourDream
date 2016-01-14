@@ -6,6 +6,7 @@ var stages = {
 	selectStage: function() {
 		var stage = app.getParameters().stage;
 		stage = Number(stage);
+		app.el.template.attr('data-id', 'stage-'+stage);
 		switch(stage) {
 			case 1:
 				console.log("It's in stage 1");
@@ -26,6 +27,10 @@ var stages = {
 			case 5:
 				console.log("It's in stage 5");
 				stage5.setup();
+				break;
+			case 6:
+				console.log("It's in stage 6");
+				stage6.setup();
 				break;
 			default:
 				console.log('This stage is not defined');

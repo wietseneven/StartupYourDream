@@ -78,19 +78,23 @@ var stage3 = {
 			top     : el.offset().top + 'px',
 			left    : el.offset().left + 'px',
 		}).addClass('positionSet');
-		stage3.setTitlePos(el);
+		stage3.setTitlePos(el, false);
 	},
-	setTitlePos: function(el) {
+	setTitlePos: function(el, right) {
 		var windowWidth = $(window).width();
 		var elWidth     = el.outerWidth();
 		var offset      = (windowWidth/2) - (elWidth/2);
-		offset          = 0.6 * windowWidth;
+		if(right) {
+			offset = 0.6 * windowWidth;
+		}
 
 		el.animate({
 			top: '225px',
 			left: offset+'px'
 		},500, 'swing', function() {
-			stage3.getMap();
+			if (!right) {
+				stage3.getMap();
+			}
 		});
 
 
@@ -102,19 +106,34 @@ var stage3 = {
 		var popupText = {
 			video: true,
 			id: 'stage3Video',
-			videoSrc: 'stage3/stage3.mp4',
-			button: {
-				text:   'Ga door naar de volgende koffer',
-				//action: 'window.location.reload()'
-				action: 'stages.listStages()'
-			}
+			videoSrc: 'stage3/stage3.mp4'
 		};
 
 		map.setup('append', true, false, popupText);
-		video.setup('stage3Video');
+
+		setTimeout(function(){
+			map.el.map.hide();
+			video.setup('stage3Video', function() {
+				map.el.map.fadeIn('fast');
+				stage3.setTitlePos($('.btn.positionSet'), true);
+				map.el.text.removeClass('starting');
+			});
+		}, 500);
+
 	},
 	selectedCountry: function(countryname){
-		alert(countryname);
 		interact.user.postStartupChoices(app.session.authCode, 'country', countryname, 3);
+		app.el.template.children().fadeOut('fast', function() {
+			app.getTemplate('popup', function(template) {
+				var context = {
+					title: 'Goede keuze!',
+					button: {
+						text: 'Ga door naar de volgende koffer',
+						action: 'window.location.reload()'
+					}
+				}
+				app.el.template.html(template(context));
+			});
+		});
 	}
 };

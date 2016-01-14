@@ -15,7 +15,9 @@
         <h2>{{ title }}</h2>
       </header>
       <p class="font-futura-heavy-oblique">{{{ body }}}</p>{{#if button}}
+      {{#if button.text}}
       <button onClick="{{ button.action }}">{{ button.text }}</button>{{/if}}
+      {{/if}}
       {{#if startups}}
       <div class="startups">{{#each startups}}
         <div id="startup-{{@key}}" class="startup">
@@ -29,5 +31,7 @@
       </div>{{/if}}
     </div>{{/if}}
   </div>{{#if video }}
+  {{#if button.text}}
   <button onClick="{{ button.action }}" class="hidden belowPopup">{{ button.text }}</button>{{/if}}
+  {{/if}}
 </div>

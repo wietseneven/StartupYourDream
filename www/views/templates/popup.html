@@ -31,5 +31,7 @@
       </div>{{/if}}
     </div>{{/if}}
   </div>{{#if video }}
+  {{#if button.text}}
   <button onClick="{{ button.action }}" class="hidden belowPopup">{{ button.text }}</button>{{/if}}
+  {{/if}}
 </div>

@@ -1,15 +1,15 @@
 var video = {
 	el: {},
-	setup: function(videoID) {
+	setup: function(videoID, callback) {
 		video.el.video = document.getElementById(videoID);
-		video.click();
+		video.click(callback);
 
 		video.el.playBtn   = $('#play');
 		video.el.pauseBtn  = $('#pause');
 		video.el.replayBtn = $('#replay');
 		video.el.cta	   = $('.belowPopup');
 	},
-	click: function() {
+	click: function(callback) {
 		var clickEventType = ((document.ontouchstart!==null)?'click':'touchstart');
 		var thisVideo = video.el.video;
 
@@ -31,6 +31,7 @@ var video = {
 		thisVideo.addEventListener('ended',function() {
 			video.el.replayBtn.fadeIn();
 			video.el.cta.fadeIn();
+			if(callback) callback();
 		},false);
 	}
 };

@@ -25,9 +25,10 @@
       fill #fff !important
 
 #text
-  width    40vw
-  top      0
-  align-self: flex-end;
+  width      40vw
+  top        0
+  align-self flex-end
+  transition width .5s
   .popup
     position static
     .body
@@ -36,3 +37,8 @@
       h2
         margin-top    -40px
         margin-bottom 30px
+
+#template[data-id='stage-3']
+  #text
+    &.starting
+      width calc(40vw + 310px)

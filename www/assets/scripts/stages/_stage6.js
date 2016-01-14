@@ -1,11 +1,11 @@
-var stage4 = {
+var stage6 = {
 	setup: function() {
-		console.log('Setting up stage 4');
-		stage4.setLogin();
+		console.log('Setting up stage 6');
+		stage6.setLogin();
 	},
 	setLogin: function() {
-		app.login('stage4', function() {
-			stage4.setWelcomeScreen();
+		app.login('stage6', function() {
+			stage6.setWelcomeScreen();
 		});
 	},
 	setWelcomeScreen: function() {
@@ -13,7 +13,7 @@ var stage4 = {
 			var context = {
 				video: true,
 				id: 'welcomeVideo',
-				videoSrc: 'stage4/stage4.mp4',
+				videoSrc: 'stage6/stage6.mp4',
 				button: {
 					text:   'Wat nu? Ga door naar de volgende koffer',
 					//action: 'window.location.reload()'

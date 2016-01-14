@@ -2,8 +2,9 @@ var map = {
 	el: {},
 	clickable: false,
 	startups: false,
-	setup: function(location, clickable, startups) {
-		map.loadTemplate(location, clickable);
+	popupText: {},
+	setup: function(location, clickable, startups, popupText) {
+		map.loadTemplate(location);
 		if(clickable){
 			map.clickable = true;
 		}
@@ -11,8 +12,13 @@ var map = {
 		if(startups){
 			map.startups = true;
 		}
+
+
+		if(popupText){
+			map.popupText = popupText;
+		}
 	},
-	loadTemplate: function(location, clickable) {
+	loadTemplate: function(location) {
 		app.getTemplate('map', function(template){
 			if (location == 'full') {
 				app.el.template.html(template);
@@ -41,15 +47,15 @@ var map = {
 
 				app.getTemplate('popup', function (template) {
 					var content = {
-						title: 'Europa',
-						body: 'Kies een land aan de linkerzijde',
+						title: map.popupText.title,
+						body: map.popupText.body,
 						button: {
-							text: 'Ga door naar de volgende koffer',
-							action: 'window.location.reload()'
+							text: map.popupText.button,
+							//action: 'window.location.reload()'
 						}
 					};
-					console.dir(content);
-					map.el.text.html(template(content));
+					console.dir(map.popupText);
+					map.el.text.html(template(map.popupText));
 				});
 
 				var j = 0;
@@ -173,7 +179,11 @@ var map = {
 				app.getTemplate('popup', function (template) {
 					var content = {
 						title: map.stateNames[curID],
-						startups: map.stateText[curID]
+						body: map.stateText[curID],
+						button: {
+							'text': 'Kies '+ map.stateNames[curID],
+							'action': 'stage3.selectedCountry("'+map.stateNames[curID]+'")'
+						}
 					};
 					console.dir(content);
 					map.el.text.html(template(content));

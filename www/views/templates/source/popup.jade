@@ -37,5 +37,7 @@
 			{{/if}}
 		{{/if}}
 	{{#if video }}
+	{{#if button.text}}
 	button.hidden.belowPopup(onClick="{{ button.action }}") {{ button.text }}
+	{{/if}}
 	{{/if}}

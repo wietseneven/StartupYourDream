@@ -6,6 +6,7 @@ var stages = {
 	selectStage: function() {
 		var stage = app.getParameters().stage;
 		stage = Number(stage);
+		app.el.template.attr('data-id', 'stage-'+stage);
 		switch(stage) {
 			case 1:
 				console.log("It's in stage 1");

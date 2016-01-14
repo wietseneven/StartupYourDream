@@ -86,6 +86,16 @@ if ($requestType == 'user') {
 				WHERE
 					authCode=?
 		    ");
+		} elseif ($toUpdate == 'country') {
+			$insertQuery = $db->prepare("
+				UPDATE
+					users
+				SET
+					country=?,
+					stage=?
+				WHERE
+					authCode=?
+		    ");
 		}
 		$insertParams = array($startups, $stage, $authCode);
 		// voer de statement met de parameters uit

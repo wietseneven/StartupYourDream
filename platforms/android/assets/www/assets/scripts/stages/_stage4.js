@@ -13,7 +13,7 @@ var stage4 = {
 			var context = {
 				video: true,
 				id: 'welcomeVideo',
-				videoSrc: 'stage1/rabit.mp4',
+				videoSrc: 'stage4/stage4.mp4',
 				button: {
 					text:   'Wat nu? Ga door naar de volgende koffer',
 					//action: 'window.location.reload()'
