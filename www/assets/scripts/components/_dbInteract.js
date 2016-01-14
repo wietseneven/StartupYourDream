@@ -14,16 +14,16 @@ var interact = {
 				}
 			);
 		},
-		postStatupChoices: function(authcode, startups) {
-			console.log(startups);
+		postStatupChoices: function(authCode, startups) {
+			console.log('asdf'+startups);
 			$.post("https://app.wathebikaande.eu/api/request.php", {
 					type	: 'user',
 					authCode: authCode,
 					startups: startups
 				},
 				function(data, status) {
-					//	alert(data + '\n' + status);
-					callback();
+					console.log(data);
+					if (callback) callback();
 					return data;
 				}
 			);

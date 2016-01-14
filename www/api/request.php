@@ -4,8 +4,8 @@ include('db.connect.php');
 
 if ($_POST['type']):
 	$requestType = $_POST['type'];
-elseif ($_GET):
-	$requestType = $_GET['type'];
+elseif ($_POST):
+	$requestType = $_POST['type'];
 endif;
 
 if ($requestType == 'user'):
@@ -55,8 +55,8 @@ if ($requestType == 'user'):
 	// toon het json object
 	echo $json;
 elseif ($requestType == 'startups'):
-	$authCode = $_GET['authCode'];
-	$startups = $_GET['startups'];
+	$authCode = $_POST['authCode'];
+	$startups = $_POST['startups'];
 
 	if(!$authCode || !$startups){
 		echo 'No authcode or startups given';
@@ -95,6 +95,8 @@ elseif ($requestType == 'startups'):
 	// vertaal het resultaat naar een json object
 	$json = json_encode($result, JSON_PRETTY_PRINT);
 	// toon het json object
+
+
 	echo $json;
 
 

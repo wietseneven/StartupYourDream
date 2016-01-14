@@ -55,7 +55,11 @@ var map = {
 				app.getTemplate('popup', function (template) {
 					var content = {
 						title: 'Europa',
-						body: 'Kies een land aan de linkerzijde'
+						body: 'Kies een land aan de linkerzijde',
+						button: {
+							text: 'hi',
+							action: 'stage2.postStartups()'
+						}
 					};
 					console.dir(content);
 					map.el.text.html(template(content));
@@ -217,7 +221,7 @@ var map = {
 
 		setTimeout(function() {
 			map.getStartups();
-		}, 1000);
+		}, 100);
 
 	},
 	openModal: function(elID) {
@@ -247,7 +251,7 @@ var map = {
 
 
 		setTimeout(function() {
-			$this.find('h4').fadeIn('fast');
+			$this.find('h4, .linken').fadeIn('fast');
 			$this.find('.content').fadeIn('fast');
 			$this.append(closeBtn);
 		}, 1000);
@@ -261,9 +265,7 @@ var map = {
 	closeModal: function(elID, origDimensions) {
 		var $this = $('#'+elID);
 		$this.removeClass('open');
-		$this.find('.content').fadeOut('fast');
-		$this.find('h4').fadeOut('fast');
-		$this.find('.close').fadeOut('fast');
+		$this.find('h4, .linken, .content, .close').fadeOut('fast');
 		//$this.animate(origDimensions, 500);
 	},
 	getStartups: function() {
@@ -301,6 +303,31 @@ var map = {
 			$('#marker-'+startup.id).click(function() {
 				map.openModal('marker-'+startup.id);
 			});
+
+			$('.linken').click(function(){
+				$this = $(this);
+				if($this.hasClass('selected')) {
+					map.removeMarker($this);
+				} else {
+					map.selectMarker($this);
+				}
+			});
 		});
-	}
+	},
+	selectMarker: function($this){
+		$this.addClass('selected');
+		var thisID = $this.attr('data-id');
+		if (map.selectedStartups == '') {
+			map.selectedStartups = thisID;
+
+		} else if (map.selectedStartups.indexOf(thisID) <= -1) {
+			map.selectedStartups += ','+thisID;
+		}
+		console.log(map.selectedStartups.indexOf(thisID));
+		console.log(map.selectedStartups);
+	},
+	removeMarker: function($this) {
+		$this.removeClass('selected');
+	},
+	selectedStartups: ''
 };

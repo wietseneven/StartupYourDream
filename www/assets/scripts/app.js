@@ -3,6 +3,7 @@ var app = {
 	el: {
 		template: $('#template')
 	},
+	session: {},
 	templateRoot: 'views/templates/',
 	setup: function(){
 		app.disableScroll();
