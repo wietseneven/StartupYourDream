@@ -14,7 +14,7 @@ var interact = {
 				}
 			);
 		},
-		postStatupChoices: function(authCode, startups, stage, callback) {
+		postStartupChoices: function(authCode, startups, stage, callback) {
 			$.post("https://app.wathebikaande.eu/api/request.php", {
 					type	: 'startups',
 					authCode: authCode,

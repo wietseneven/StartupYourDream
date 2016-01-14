@@ -27,8 +27,8 @@ var map = {
 						title: 'Europa',
 						body: 'Kies een land aan de linkerzijde',
 						button: {
-							text: 'hi',
-							action: 'stage2.postStartups()'
+							text: 'Ga door naar de volgende koffer',
+							action: 'window.location.reload()'
 						}
 					};
 					console.dir(content);

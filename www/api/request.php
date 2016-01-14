@@ -8,10 +8,10 @@ elseif ($_POST):
 	$requestType = $_POST['type'];
 endif;
 
-if ($requestType == 'user'):
+if ($requestType == 'user') {
 	$authCode = $_POST['authCode'];
 
-	if(!$authCode){
+	if (!$authCode) {
 		die;
 	}
 
@@ -54,26 +54,28 @@ if ($requestType == 'user'):
 	$json = json_encode($result, JSON_PRETTY_PRINT);
 	// toon het json object
 	echo $json;
-elseif ($requestType == 'startups'):
+
+} elseif ($requestType == 'startups') {
+
 	$authCode = $_POST['authCode'];
+	$toUpdate = $_POST['toUpdate'];
 	$startups = $_POST['startups'];
-	$stage    = $_POST['stage'];
-	if(!$authCode){
+	$stage = $_POST['stage'];
+	if (!$authCode) {
 		echo 'No authcode or startups given';
 		die;
 	}
-	if($startups) {
+	if ($startups) {
 		$insertQuery = $db->prepare("
 			UPDATE
 				users
 			SET
-				startups=?,
+				?=?,
 				stage=?
 			WHERE
 				authCode=?
 	    ");
-
-		$insertParams = array($startups, $stage, $authCode);
+		$insertParams = array($toUpdate, $startups, $stage, $authCode);
 		// voer de statement met de parameters uit
 		$insertQuery->execute($insertParams);
 	}
@@ -103,6 +105,4 @@ elseif ($requestType == 'startups'):
 
 
 	echo $json;
-
-
-endif;
+}

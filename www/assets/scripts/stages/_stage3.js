@@ -6,6 +6,11 @@ var stage3 = {
 	setLogin: function(){
 		console.log('setting up login in stage 3');
 		app.login('stage3', function() {
+			stage3.getUserCompanies();
+		});
+	},
+	getUserCompanies: function() {
+		interact.user.postStartupChoices(app.session.authCode, '', 3, function(data){
 			stage3.chooseBussinessCategory();
 		});
 	},
@@ -28,6 +33,9 @@ var stage3 = {
 					},
 					5: {
 						text: 'Eurovisie songfestival'
+					},
+					6: {
+						text: 'Journalistiek'
 					}
 				}
 			};

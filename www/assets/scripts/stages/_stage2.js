@@ -15,6 +15,6 @@ var stage2 = {
 	},
 	postStartups: function() {
 		console.log('Choices = '+map.selectedStartups);
-		interact.user.postStatupChoices(app.session.authCode, map.selectedStartups, 2);
+		interact.user.postStartupChoices(app.session.authCode, 'startups', map.selectedStartups, 2);
 	}
 };
