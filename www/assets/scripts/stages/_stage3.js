@@ -1,4 +1,5 @@
 var stage3 = {
+	el: {},
 	setup: function() {
 		console.log('Setting up stage 3');
 		stage3.setLogin();
@@ -10,7 +11,7 @@ var stage3 = {
 		});
 	},
 	getUserCompanies: function() {
-		interact.user.postStartupChoices(app.session.authCode, '', 3, function(data){
+		interact.user.postStartupChoices(app.session.authCode, '', '', 3, function(data){
 			stage3.chooseBussinessCategory();
 		});
 	},
@@ -18,28 +19,50 @@ var stage3 = {
 		app.getTemplate('button', function(template) {
 			var choices = {
 				title: 'Kies je bedrijfscategorie',
-				buttons: {
-					1: {
+				id: 'stage3catBtns',
+				buttons: [
+					{
 						text: '3d printing'
 					},
-					2: {
+					{
 						text: 'Muziek/streaming'
 					},
-					3: {
+					{
 						text: 'Sociale netwerken'
 					},
-					4: {
+					{
 						text: 'Domotica'
 					},
-					5: {
+					{
 						text: 'Eurovisie songfestival'
 					},
-					6: {
+					{
 						text: 'Journalistiek'
 					}
-				}
+				]
 			};
 			app.el.template.html(template(choices));
+			stage3.el.btngroup = $('#stage3catBtns');
+			stage3.el.catBtns  = stage3.el.btngroup.children();
+			stage3.watchButtons();
+		});
+	},
+	watchButtons: function() {
+		stage3.el.catBtns.click(function() {
+			var $this = $(this);
+			var thisCategory = $this.text();
+			stage3.setPosition($this);
+
+			interact.user.postStartupChoices(app.session.authCode, 'category', thisCategory , 3, function(data){
+				alert('updated');
+			});
+		});
+	},
+	setPosition: function(el) {
+		el.css({
+			position: 'absolute',
+			top     : el.offset().top + 'px',
+			left    : el.offset().left + 'px'
 		});
 	}
 };

@@ -41,35 +41,35 @@ var stages = {
 				buttons: {
 					1: {
 						text: 'Stage 1',
-						action: '?stage=1'
+						href: '?stage=1'
 					},
 					2: {
 						text: 'Stage 2',
-						action: '?stage=2'
+						href: '?stage=2'
 					},
 					3: {
 						text: 'Stage 3',
-						action: '?stage=3'
+						href: '?stage=3'
 					},
 					4: {
 						text: 'Stage 4',
-						action: '?stage=4'
+						href: '?stage=4'
 					},
 					5: {
 						text: 'Stage 5',
-						action: '?stage=5'
+						href: '?stage=5'
 					},
 					6: {
 						text: 'Stage 6',
-						action: '?stage=6'
+						href: '?stage=6'
 					},
 					7: {
 						text: 'Stage 7',
-						action: '?stage=7'
+						href: '?stage=7'
 					},
 					8: {
 						text: 'Stage 8',
-						action: '?stage=8'
+						href: '?stage=8'
 					}
 				}
 			};

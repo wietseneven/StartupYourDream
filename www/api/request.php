@@ -66,15 +66,27 @@ if ($requestType == 'user') {
 		die;
 	}
 	if ($startups) {
-		$insertQuery = $db->prepare("
-			UPDATE
-				users
-			SET
-				startups=?,
-				stage=?
-			WHERE
-				authCode=?
-	    ");
+		if ($toUpdate == 'startups') {
+			$insertQuery = $db->prepare("
+				UPDATE
+					users
+				SET
+					startups=?,
+					stage=?
+				WHERE
+					authCode=?
+		    ");
+		} elseif ($toUpdate == 'category') {
+			$insertQuery = $db->prepare("
+				UPDATE
+					users
+				SET
+					category=?,
+					stage=?
+				WHERE
+					authCode=?
+		    ");
+		}
 		$insertParams = array($startups, $stage, $authCode);
 		// voer de statement met de parameters uit
 		$insertQuery->execute($insertParams);

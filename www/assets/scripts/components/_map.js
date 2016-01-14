@@ -284,7 +284,7 @@ var map = {
 		console.log('Removing '+thisID+'-marker from string');
 
 		var str = map.selectedStartups;
-		str = str.replace(thisID+',', '');
+		str = str.replace(','+thisID, '');
 		str = str.replace(thisID, '');
 		map.selectedStartups = str;
 		$this.removeClass('selected');
