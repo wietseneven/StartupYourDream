@@ -6,7 +6,7 @@ if ($_POST['type']):
 	$requestType = $_POST['type'];
 else if ($_GET):
 	$requestType = $_GET['type'];
-	var_dump( $_GET );
+	//var_dump( $_GET );
 else:
 	die;
 endif;
@@ -57,10 +57,13 @@ if ($requestType == 'user'):
 	$json = json_encode($result, JSON_PRETTY_PRINT);
 	// toon het json object
 	echo $json;
-else if ($requestType == 'startups'):
-	$authCode = $_POST['authCode'];
+elseif ($requestType == 'startups'):
+
+	$authCode = $_GET['authCode'];
+	$startups = $_GET['startups'];
 	if(!$authCode || !$startups){
 		die;
 	}
+	echo 'hi';
 
 endif;
