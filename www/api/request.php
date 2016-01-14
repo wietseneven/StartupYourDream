@@ -64,18 +64,12 @@ elseif ($requestType == 'startups'):
 	}
 
 	$insertQuery = $db->prepare("
-		INSERT INTO
-			users (authCode, startups)
-		SELECT
-			?, ?
-		FROM DUAL
-		WHERE NOT EXISTS
-			(SELECT
-			 	*
-		    FROM
-		    	users
-	        WHERE
-	        	authCode=?)
+		UPDATE
+			users
+		SET
+			startups=?
+		WHERE
+			authCode=?
   	");
 
 	$getUserQuery = $db->prepare("
@@ -88,7 +82,7 @@ elseif ($requestType == 'startups'):
 	");
 
 	// voeg parameters toe aan je statement
-	$insertParams = array($authCode, $startups, $authCode);
+	$insertParams = array($startups, $authCode);
 	$getUserParams = array($authCode);
 	// voer de statement met de parameters uit
 	$insertQuery->execute($insertParams);
