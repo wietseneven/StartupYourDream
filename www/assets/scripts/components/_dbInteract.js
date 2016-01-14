@@ -18,7 +18,8 @@ var interact = {
 			console.log(startups);
 			$.post("https://app.wathebikaande.eu/api/request.php", {
 					type	: 'user',
-					authCode: authCode
+					authCode: authCode,
+					startups: startups
 				},
 				function(data, status) {
 					//	alert(data + '\n' + status);
@@ -27,7 +28,7 @@ var interact = {
 				}
 			);
 		},
-		getStartupChoices: function(userID) {
+		getStartupChoices: function(authCode) {
 
 		}
 	}

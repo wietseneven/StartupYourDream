@@ -244,8 +244,13 @@ var map = {
 				map.closeModal(elID, origDimensions);
 			});
 
-		$this.append(closeBtn);
 
+
+		setTimeout(function() {
+			$this.find('h4').fadeIn('fast');
+			$this.find('.content').fadeIn('fast');
+			$this.append(closeBtn);
+		}, 1000);
 
 		//setTimeout(function() {
 		//	map.closeModal(elID, origDimensions);
@@ -256,6 +261,8 @@ var map = {
 	closeModal: function(elID, origDimensions) {
 		var $this = $('#'+elID);
 		$this.removeClass('open');
+		$this.find('.content').fadeOut('fast');
+		$this.find('h4').fadeOut('fast');
 		$this.find('.close').fadeOut('fast');
 		//$this.animate(origDimensions, 500);
 	},
@@ -280,11 +287,13 @@ var map = {
 	createMarker: function(location, startup){
 		app.getTemplate('startupMarker', function(template){
 			var context = {
-				top: location.y + (location.height / 2),
-				left: location.x + (location.width / 2),
-				name: startup.name,
-				logo: startup.logo,
-				id:   startup.id
+				top:     location.y + (location.height / 2),
+				left:    location.x + (location.width / 2),
+				name:    startup.name,
+				logo:    startup.logo,
+				id:      startup.id,
+				content: startup.content,
+				category: startup.category
 			};
 
 			app.el.template.append(template(context));

@@ -1,7 +1,15 @@
 <?php
 header('Access-Control-Allow-Origin: *');
 include('db.connect.php');
-$requestType = $_POST['type'];
+
+if ($_POST['type']):
+	$requestType = $_POST['type'];
+else if ($_GET):
+	$requestType = $_GET['type'];
+	var_dump( $_GET );
+else:
+	die;
+endif;
 
 if ($requestType == 'user'):
 	$authCode = $_POST['authCode'];
@@ -49,5 +57,10 @@ if ($requestType == 'user'):
 	$json = json_encode($result, JSON_PRETTY_PRINT);
 	// toon het json object
 	echo $json;
+else if ($requestType == 'startups'):
+	$authCode = $_POST['authCode'];
+	if(!$authCode || !$startups){
+		die;
+	}
 
 endif;

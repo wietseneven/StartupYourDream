@@ -244,11 +244,12 @@ var map = {
 				map.closeModal(elID, origDimensions);
 			});
 
-		$this.append(closeBtn);
+
 
 		setTimeout(function() {
 			$this.find('h4').fadeIn('fast');
 			$this.find('.content').fadeIn('fast');
+			$this.append(closeBtn);
 		}, 1000);
 
 		//setTimeout(function() {
