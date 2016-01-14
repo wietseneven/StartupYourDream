@@ -179,7 +179,11 @@ var map = {
 				app.getTemplate('popup', function (template) {
 					var content = {
 						title: map.stateNames[curID],
-						startups: map.stateText[curID]
+						body: map.stateText[curID],
+						button: {
+							'text': 'Kies '+ map.stateNames[curID],
+							'action': 'stage3.selectedCountry("'+map.stateNames[curID]+'")'
+						}
 					};
 					console.dir(content);
 					map.el.text.html(template(content));

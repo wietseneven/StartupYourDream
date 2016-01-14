@@ -112,5 +112,9 @@ var stage3 = {
 
 		map.setup('append', true, false, popupText);
 		video.setup('stage3Video');
+	},
+	selectedCountry: function(countryname){
+		alert(countryname);
+		interact.user.postStartupChoices(app.session.authCode, 'country', countryname, 3);
 	}
 };
