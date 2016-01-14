@@ -62,7 +62,7 @@ elseif ($requestType == 'startups'):
 		echo 'No authcode or startups given';
 		die;
 	}
-	if(!$startups) {
+	if($startups) {
 		$insertQuery = $db->prepare("
 			UPDATE
 				users
