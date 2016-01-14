@@ -17467,12 +17467,34 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/assets\/scripts\/stages\/_stage5 kopie.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/scripts\/stages\/_stage5 kopie.js",
+		"outputAbbreviatedPath": "\/assets\/scripts\/stages\/min\/_stage5 kopie-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/assets\/scripts\/stages\/_stage5.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/scripts\/stages\/_stage5.js",
 		"outputAbbreviatedPath": "\/assets\/scripts\/stages\/min\/_stage5-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/scripts\/stages\/_stage6.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/scripts\/stages\/_stage6.js",
+		"outputAbbreviatedPath": "\/assets\/scripts\/stages\/min\/_stage6-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -18419,6 +18441,12 @@
 			"followForSyntaxChecking": 1,
 			"linkedFileAbbreviatedPath": "\/assets\/scripts\/stages\/_stage5.js",
 			"position": 9,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/assets\/scripts\/stages\/_stage6.js",
+			"position": 10,
 			"type": 0
 			}
 		]
