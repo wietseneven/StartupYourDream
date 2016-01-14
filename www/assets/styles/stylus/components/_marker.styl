@@ -1,6 +1,6 @@
 .marker
   position      absolute
-  margin        -40px 0 -10px 0
+  margin        -50px 0 -10px 0
   width         40px
   height        40px
   background    #fff
@@ -26,7 +26,6 @@
       right    15px
       position absolute
       top      60px
-      height   60px
     header
       height     300px
       transition height .6s
@@ -103,4 +102,10 @@
   .content
     display none
   .linken
-    display none
+    display    none
+    height     64px
+    box-sizing border-box
+    &.selected, &.selected:hover, &.selected:active
+      background #BADA55
+      &:before
+         background #bada55

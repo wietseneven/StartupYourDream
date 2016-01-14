@@ -14,20 +14,21 @@ var interact = {
 				}
 			);
 		},
-		postStatupChoices: function(authcode, startups) {
-			console.log(startups);
+		postStatupChoices: function(authCode, startups, stage, callback) {
 			$.post("https://app.wathebikaande.eu/api/request.php", {
-					type	: 'user',
-					authCode: authCode
+					type	: 'startups',
+					authCode: authCode,
+					startups: startups,
+					stage   : 2
 				},
 				function(data, status) {
-					//	alert(data + '\n' + status);
-					callback();
+					console.log(data);
+					if (callback) callback();
 					return data;
 				}
 			);
 		},
-		getStartupChoices: function(userID) {
+		getStartupChoices: function(authCode) {
 
 		}
 	}

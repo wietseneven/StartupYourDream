@@ -16,41 +16,11 @@ var map = {
 	stateNames: [],
 	stateText: [],
 	stateModes: [],
+	countryPaths: [],
 	createMapJSON: function() {
-		var stateURLs = [];
-		var stateModes = [];
 		var stateColors = [];
-		var stateOverColors = [];
-		var stateClickedColors = [];
-		var stateText = [];
 
-		var offColor;
-		var strokeColor;
-		var mapWidth;
-		var mapHeight;
-		var useSideText;
-		var textAreaWidth;
-		var textAreaPadding;
-
-		var mouseX = 0;
-		var mouseY = 0;
-		var current = null;
-
-		// Detect if the browser is IE.
-		var IE = false;
-
-		$.getJSON('assets/data/mapData.json', function(data) {
-
-				var json = data;
-
-				offColor = '#' + json.mapSettings.offColor;
-				strokeColor = '#' + json.mapSettings.strokeColor;
-				mapWidth = json.mapSettings.mapWidth;
-				mapHeight = json.mapSettings.mapHeight;
-				useSideText = json.mapSettings.useSideText;
-				textAreaWidth = json.mapSettings.textAreaWidth;
-				textAreaPadding = json.mapSettings.textAreaPadding;
-
+		$.getJSON('assets/data/mapData.json', function(json) {
 
 				app.getTemplate('popup', function (template) {
 					var content = {
@@ -75,12 +45,8 @@ var map = {
 
 					map.stateText.push($node.startups);
 					map.stateNames.push($node.stateName);
-					stateURLs.push($node.url);
 					map.stateModes.push($node.stateMode);
 					stateColors.push('#' + $node.stateColor);
-					stateOverColors.push('#B20');
-					stateClickedColors.push('#b20');
-
 				});
 
 				createMap();
@@ -96,7 +62,7 @@ var map = {
 				attributes = {
 					fill: '#d9d9d9',
 					cursor: 'pointer',
-					stroke: strokeColor,
+					stroke: '#24221f',
 					'stroke-width': 1,
 					'stroke-linejoin': 'round'
 				},
@@ -122,7 +88,6 @@ var map = {
 					});
 
 				}
-
 			}
 
 			resizeMap(r);
@@ -137,11 +102,11 @@ var map = {
 
 	},
 	animateMap: function() {
-		var countriePaths = map.el.map.find('path');
+		map.countriePaths = map.el.map.find('path');
 		var countries = {};
 		var i = 0;
 		var j = 0;
-		countriePaths.each(function() {
+		map.countriePaths.each(function() {
 			var $this = $(this);
 			countries[map.stateNames[i]] = {
 				top:  $this.offset().top,
@@ -153,12 +118,30 @@ var map = {
 			i++;
 		});
 
-		countriePaths.click(function() {
+		animate();
+		function animate() {
+			setTimeout(function(){
+				$('#'+map.stateNames[j].replace(/\s+/g, '')).attr('data-grown', 'true');
+
+				j++;
+				if (j < 38){
+					animate();
+				}
+			}, 100);
+		}
+
+		setTimeout(function() {
+			map.getStartups();
+		}, 100);
+		//map.countryClick();
+	},
+	countryClick: function() {
+		map.countriePaths.click(function() {
 			var $this = $(this);
 			var curID = $this.index() - 2;
 
 			if(map.stateModes[curID] === "ON") {
-				countriePaths.each(function () {
+				map.countriePaths.each(function () {
 					$(this).attr('data-active', 'false');
 				});
 
@@ -206,23 +189,6 @@ var map = {
 				});
 			}
 		});
-
-		animate();
-		function animate() {
-			setTimeout(function(){
-				$('#'+map.stateNames[j].replace(/\s+/g, '')).attr('data-grown', 'true');
-
-				j++;
-				if (j < 38){
-					animate();
-				}
-			}, 100);
-		}
-
-		setTimeout(function() {
-			map.getStartups();
-		}, 100);
-
 	},
 	openModal: function(elID) {
 		var $this = $('#'+elID);
@@ -233,14 +199,6 @@ var map = {
 			width:  $this.outerWidth(),
 			height: $this.outerHeight()
 		};
-
-		//$this.addClass('open').animate({
-		//	'top'       : '0',
-		//	'left'      : '15%',
-		//	'width'     : '70%',
-		//	'height'    : '100%'
-		//}, 500);
-
 		$this.addClass('open');
 		var closeBtn = $('<button class="close">Sluiten</button>')
 			.click(function(event) {
@@ -255,11 +213,6 @@ var map = {
 			$this.find('.content').fadeIn('fast');
 			$this.append(closeBtn);
 		}, 1000);
-
-		//setTimeout(function() {
-		//	map.closeModal(elID, origDimensions);
-		//},10000);
-
 
 	},
 	closeModal: function(elID, origDimensions) {
@@ -289,8 +242,8 @@ var map = {
 	createMarker: function(location, startup){
 		app.getTemplate('startupMarker', function(template){
 			var context = {
-				top:     location.y + (location.height / 2),
-				left:    location.x + (location.width / 2),
+				top:     location.y + (location.height / 2) - 20,
+				left:    location.x + (location.width / 2) - 24,
 				name:    startup.name,
 				logo:    startup.logo,
 				id:      startup.id,
@@ -304,7 +257,7 @@ var map = {
 				map.openModal('marker-'+startup.id);
 			});
 
-			$('.linken').click(function(){
+			$('#marker-'+startup.id+' .linken').click(function(){
 				$this = $(this);
 				if($this.hasClass('selected')) {
 					map.removeMarker($this);
@@ -317,17 +270,25 @@ var map = {
 	selectMarker: function($this){
 		$this.addClass('selected');
 		var thisID = $this.attr('data-id');
+		console.log('Adding '+thisID+'-marker to string');
 		if (map.selectedStartups == '') {
 			map.selectedStartups = thisID;
 
 		} else if (map.selectedStartups.indexOf(thisID) <= -1) {
 			map.selectedStartups += ','+thisID;
 		}
-		console.log(map.selectedStartups.indexOf(thisID));
-		console.log(map.selectedStartups);
+		stage2.postStartups();
 	},
 	removeMarker: function($this) {
+		var thisID = $this.attr('data-id');
+		console.log('Removing '+thisID+'-marker from string');
+
+		var str = map.selectedStartups;
+		str = str.replace(thisID+',', '');
+		str = str.replace(thisID, '');
+		map.selectedStartups = str;
 		$this.removeClass('selected');
+		stage2.postStartups();
 	},
 	selectedStartups: ''
 };

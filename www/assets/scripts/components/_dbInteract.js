@@ -14,12 +14,12 @@ var interact = {
 				}
 			);
 		},
-		postStatupChoices: function(authCode, startups) {
-			console.log('asdf'+startups);
+		postStatupChoices: function(authCode, startups, stage, callback) {
 			$.post("https://app.wathebikaande.eu/api/request.php", {
 					type	: 'startups',
 					authCode: authCode,
-					startups: startups
+					startups: startups,
+					stage   : 2
 				},
 				function(data, status) {
 					console.log(data);

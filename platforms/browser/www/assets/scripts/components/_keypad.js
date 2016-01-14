@@ -109,6 +109,7 @@ var keypad = {
 		keypad.hideKeys();
 		keypad.el.resultBox.addClass('loading');
 		var data = interact.user.check(keypad.keys.key, function() {
+			app.session.authCode = keypad.keys.key;
 			if (keypad.callback) keypad.callback(data);
 		});
 

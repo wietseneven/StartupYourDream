@@ -57,7 +57,7 @@ if ($requestType == 'user'):
 elseif ($requestType == 'startups'):
 	$authCode = $_POST['authCode'];
 	$startups = $_POST['startups'];
-
+	$stage    = $_POST['stage'];
 	if(!$authCode || !$startups){
 		echo 'No authcode or startups given';
 		die;
@@ -67,7 +67,8 @@ elseif ($requestType == 'startups'):
 		UPDATE
 			users
 		SET
-			startups=?
+			startups=?,
+			stage=?
 		WHERE
 			authCode=?
   	");
@@ -82,7 +83,7 @@ elseif ($requestType == 'startups'):
 	");
 
 	// voeg parameters toe aan je statement
-	$insertParams = array($startups, $authCode);
+	$insertParams = array($startups, $stage, $authCode);
 	$getUserParams = array($authCode);
 	// voer de statement met de parameters uit
 	$insertQuery->execute($insertParams);
