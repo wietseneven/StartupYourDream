@@ -56,9 +56,10 @@ if ($requestType == 'user'):
 	// toon het json object
 	echo $json;
 elseif ($requestType == 'startups'):
-	echo 'hi';
 	$authCode = $_GET['authCode'];
 	$startups = $_GET['startups'];
+
+	echo $startups;
 	if(!$authCode || !$startups){
 
 		die;
