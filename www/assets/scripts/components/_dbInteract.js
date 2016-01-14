@@ -17,7 +17,7 @@ var interact = {
 		postStatupChoices: function(authCode, startups) {
 			console.log('asdf'+startups);
 			$.post("https://app.wathebikaande.eu/api/request.php", {
-					type	: 'user',
+					type	: 'startups',
 					authCode: authCode,
 					startups: startups
 				},
