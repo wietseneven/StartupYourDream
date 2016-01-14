@@ -15,6 +15,7 @@ var interact = {
 			);
 		},
 		postStartupChoices: function(authCode, updateType, startups, stage, callback) {
+			console.log('authcode: '+startups);
 			$.post("https://app.wathebikaande.eu/api/request.php", {
 					type	: 'startups',
 					authCode: authCode,
@@ -24,7 +25,8 @@ var interact = {
 				},
 				function(data, status) {
 					console.log(data);
-					app.session = data;
+					app.session.request = data;
+
 					if (callback) callback(data);
 					return data;
 				}

@@ -75,7 +75,7 @@ if ($requestType == 'user') {
 			WHERE
 				authCode=?
 	    ");
-		$insertParams = array($toUpdate, $startups, $stage, $authCode);
+		$insertParams = array('startups', $startups, $stage, $authCode);
 		// voer de statement met de parameters uit
 		$insertQuery->execute($insertParams);
 	}
