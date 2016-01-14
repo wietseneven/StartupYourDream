@@ -4,11 +4,9 @@ include('db.connect.php');
 
 if ($_POST['type']):
 	$requestType = $_POST['type'];
-else if ($_GET):
+elseif ($_GET):
 	$requestType = $_GET['type'];
 	//var_dump( $_GET );
-else:
-	die;
 endif;
 
 if ($requestType == 'user'):
