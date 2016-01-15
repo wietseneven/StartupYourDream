@@ -15,37 +15,54 @@
         "stateName" : "Ierland",
         "stateMode" : "ON",
         "stateColor": "B000B5",
-        "startups"  : "<h1>Ierland</h1>"
+        "startups"  : {
+          "1": "Lage belastingen",
+          "2": "De meest vrije economie in de gehele Eurozone"
+        }
       },
       {
         "stateName" : "Verenigd Koninkrijk",
         "stateMode" : "ON",
         "stateColor": "BADA55",
-        "startups"  : "<h1>Verenigd Koninkrijk</h1>"
+        "startups"  : {
+          "1": "Een van de wereldleiders op het gebied van diensten en financiën"
+        }
       },
       {
         "stateName" : "Malta",
         "stateMode" : "ON",
         "stateColor": "C0FFEE",
-        "startups"  : "<h1>Malta</h1>"
+        "startups"  : {
+          "1": "Een fiscaal efficiënte omgeving, met een volledige verrekening en dubbelebelastingverdragen met meer dan 50 landen",
+          "2": "Goed opgeleide werknemers"
+        }
       },
       {
         "stateName" : "België",
         "stateMode" : "ON",
         "stateColor": "C55",
-        "startups"  : "<h1>België</h1>"
+        "startups"  : {
+          "1": "Bedrijven krijgen belastingvoordeel",
+          "2": "Veel sociale zekerheid-wetten"
+        }
       },
       {
         "stateName" : "Luxemburg",
         "stateMode" : "ON",
         "stateColor": "707020",
-        "startups"  : "<h1>Luxemburg</h1>"
+        "startups"  : {
+          "1": "Enorm goede infrastructuur",
+          "2": "Een vrijwel ongeëvenaarde kwaliteit van leven voor de inwoners"
+        }
       },
       {
         "stateName" : "Portugal",
         "stateMode" : "ON",
         "stateColor": "101",
-        "startups"  : "<h1>Portugal</h1>"
+        "startups"  : {
+          "1": "Sterke handel met Amerika",
+          "2": "Staan enorm open voor buitenlandse bedrijven en investeringen"
+        }
       },
       {
         "stateName" : "Noorwegen",
@@ -63,7 +80,10 @@
         "stateName" : "Zweden",
         "stateMode" : "ON",
         "stateColor": "FB1",
-        "startups"  : "<h1>Zweden</h1>"
+        "startups"  : {
+          "1": "Sterke technologisch geavanceerde markt",
+          "2": "Veel aandacht voor cultural awareness regelingen"
+        }
       },
       {
         "stateName" : "Andorra",
@@ -81,7 +101,10 @@
         "stateName" : "Kroatië",
         "stateMode" : "ON",
         "stateColor": "EB01A5",
-        "startups"  : "<h1>Kroatië</h1>"
+        "startups"  : {
+          "1": "De Economie heeft een aanzienlijk groei potentieel",
+          "2": "Uitstekende geografische positie om te dienen als een regionaal centrum voor Amerikaanse bedrijven"
+        }
       },
       {
         "stateName" : "Macedonië",
@@ -91,61 +114,91 @@
         "stateName" : "Bulgarije",
         "stateMode" : "ON",
         "stateColor": "D1E5E1",
-        "startups"  : "<h1>Bulgarije</h1>"
+        "startups"  : {
+          "1": "Prijzen voor het huren of kopen van onroerend goed het laagste van heel Europa",
+          "2": "Goed geschoolde en opgeleide arbeidskrachten beschikbaar tegen de laagste arbeidskosten van Europa"
+        }
       },
       {
         "stateName" : "Cyprus",
         "stateMode" : "ON",
         "stateColor": "60061E",
-        "startups"  : "<h1>Cyprus</h1>"
+        "startups"  : {
+          "1": "The financial and professional services sector in Cyprus heavily revolves around the formation of international business companies ",
+          "2": "Winst uit investeringen in andere bedrijven zijn belasting vrij"
+        }
       },
       {
         "stateName" : "Oostenrijk",
         "stateMode" : "ON",
         "stateColor": "10ADED",
-        "startups"  : "<h1>Oostenrijk</h1>"
+        "startups"  : {
+          "1": "Goede economie",
+          "2": "Goede levensstandaard (meer afnemers van producten!)"
+        }
       },
       {
         "stateName" : "Tsjechië",
         "stateMode" : "ON",
         "stateColor": "1D1075",
-        "startups"  : "<h1>Tsjechië</h1>"
+        "startups"  : {
+          "1": "De grootste vrije markt in de hele wereld",
+          "2": "De prijs van onroerend goed, bedrijven, verbruiksgoederen en arbeid in de Tsjechische Republiek zijn vele malen goedkoper dan in andere EU landen. (80% goedkoper)"
+        }
       },
       {
         "stateName" : "Denemarken",
         "stateMode" : "ON",
         "stateColor": "1A1A1A",
-        "startups"  : "<h1>Denemarken</h1>"
+        "startups"  : {
+          "1": "Top rankings in de internationale transparantie index, heel betrouwbaar",
+          "2": "Het Deense 'flexizekerheid' model biedt een hoge mate van flexibiliteit bij  aanwerven en ontslaan praktijken"
+        }
       },
       {
         "stateName" : "Hongarije",
         "stateMode" : "ON",
         "stateColor": "D11D05",
-        "startups"  : "<h1>Hongarije</h1>"
+        "startups"  : {
+          "1": "De regering heeft een sterke betrokkenheid bij het stroomlijnen van bedrijfsprocessen",
+          "2": "Redelijk hoge concurrentiekracht"
+        }
       },
       {
         "stateName" : "Polen",
         "stateMode" : "ON",
         "stateColor": "C0FF33",
-        "startups"  : "<h1>Polen</h1>"
+        "startups"  : {
+          "1": "Sinds 1992 een constant groeiende economie",
+          "2": "De Poolse regering is voorstander van buitenlandse investeringen en heeft een aantal hervormingen op het gebied van belastingen verlaging"
+        }
       },
       {
         "stateName" : "Slowakije",
         "stateMode" : "ON",
         "stateColor": "C0D3C5",
-        "startups"  : "<h1>Slowakije</h1>"
+        "startups"  : {
+          "1": "Een van de 20 investeerders vriendelijk landen in de wereld",
+          "2": "Centraal Europees leider in economische ontwikkeling"
+        }
       },
       {
         "stateName" : "Slovenië",
         "stateMode" : "ON",
         "stateColor": "663399",
-        "startups"  : "<h1>Slovenië</h1>"
+        "startups"  : {
+          "1": "Vergemakkelijkt het internationaal investeren door stabiele ondergrond",
+          "2": "Goede centrale ligging"
+        }
       },
       {
         "stateName" : "Duitsland",
         "stateMode" : "ON",
         "stateColor": "208075",
-        "startups"  : "<h1>Duitsland</h1>"
+        "startups"  : {
+          "1": "Strategisch goede positie in het hart van Europa",
+          "2": "De op 4 na grootste economie van de hele wereld"
+        }
       },
       {
         "stateName" : "Liechtenstein",
@@ -159,25 +212,36 @@
         "stateName" : "Estland",
         "stateMode" : "ON",
         "stateColor": "DE1E7E",
-        "startups"  : "<h1>Estland</h1>"
+        "startups"  : {
+          "1": "Goede handelsmogelijkheden met Rusland en Finland"
+        }
       },
       {
         "stateName" : "Letland",
         "stateMode" : "ON",
         "stateColor": "FECA1E",
-        "startups"  : "<h1>Letland</h1>"
+        "startups"  : {
+          "1": "Sterke ligging. (Rusland, Scandinavië)",
+          "2": "Extreem hoog opgeleide beroepsbevolking"
+        }
       },
       {
         "stateName" : "Litouwen",
         "stateMode" : "ON",
         "stateColor": "6A6",
-        "startups"  : "<h1>Litouwen</h1>"
+        "startups"  : {
+          "1": "Litouwen is een van de toonaangevende landen in het verminderen van corruptie",
+          "2": "Ruim ontwikkelde markt van meer dan 500 miljoen inwoners"
+        }
       },
       {
         "stateName" : "Roemenië",
         "stateMode" : "ON",
         "stateColor": "1CE",
-        "startups"  : "<h1>Roemenië</h1>"
+        "startups"  : {
+          "1": "Beschikt over de haven van Constanta aan de Zwarte Zee en dit is  de toegangsdeur tot de Europese markt",
+          "2": "Laagste belastingstarieven van heel Europa"
+        }
       },
       {
         "stateName" : "Montenegro",
@@ -187,56 +251,52 @@
         "stateName" : "Nederland",
         "stateMode" : "ON",
         "stateColor": "C01025",
-        "startups"  : [
-          {
-            "name"     : "Blendle",
-            "category" : "Journalistiek",
-            "logo"     : "blendle.svg",
-            "images"   : [
-              {
-                "Uno": "http://lorempixel.com/400/200/cats/"
-              },
-              {
-                "Dos" : "http://lorempixel.com/400/200/cats/"
-              }
-            ]
-          },
-          {
-            "name"     : "Cool Blue",
-            "category" : "Webwinkel",
-            "logo"     : "coolblue.svg"
-          }
-        ]
+        "startups"  : {
+          "1": "Belastingparadijs",
+          "2": "Vele subsidies en regelingen voor het starten van een bedrijf"
+        }
       },
       {
         "stateName" : "Italië",
         "stateMode" : "ON",
         "stateColor": "A55",
-        "startups"  : "<h1>Italië</h1>"
+        "startups"  : {
+          "1": "Staat bekend om zijn enorm gevarieerde economie",
+          "2": "Heel goed gelegen, dicht bij veel rijke afzetgebieden"
+        }
       },
       {
         "stateName" : "Griekenland",
         "stateMode" : "ON",
         "stateColor": "B01055",
-        "startups"  : "<h1>Griekenland</h1>"
+        "startups"  : {}
       },
       {
         "stateName" : "Frankrijk",
         "stateMode" : "ON",
         "stateColor": "71771E",
-        "startups"  : "<h1>Frankrijk</h1>"
+        "startups"  : {
+          "1": "Zeer productieve arbeidskrachten",
+          "2": "Het ligt aan de Noord Zee,  the English Channel, Middelandse Zee en de Atlantische Oceaan. Het heeft grenzen met 6 andere landen en is dus een belangrijke plek voor de Europese handel."
+        }
       },
       {
         "stateName" : "Spanje",
         "stateMode" : "ON",
         "stateColor": "B00B1E",
-        "startups"  : "<h1>Spanje</h1>"
+        "startups"  : {
+          "1": "Unieke locatie waarbij verscheping heel eenvoudig is",
+          "2": "Uitgegroeid tot een zeer belangrijke speler in internationale zaken binnen de EU"
+        }
       },
       {
         "stateName" : "Finland",
         "stateMode" : "ON",
         "stateColor": "02AC1E",
-        "startups"  : "<h1>Finland</h1>"
+        "startups"  : {
+          "1": "Een van de meest concurrerende en open economieën in de wereld",
+          "2": "Export gedreven economie gebouwd op high-tech producten"
+        }
       }
     ]
 }

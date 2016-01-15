@@ -14,7 +14,11 @@
       <header>
         <h2>{{ title }}</h2>
       </header>
-      <p class="font-futura-heavy-oblique">{{{ body }}}</p>{{#if button}}
+      <p class="font-futura-heavy-oblique">{{{ body }}}</p>{{#if pros}}
+      <ul>{{#each pros}}
+        <li>{{this}}</li>{{/each}}
+      </ul>{{/if}}
+      {{#if button}}
       {{#if button.text}}
       <button onClick="{{ button.action }}">{{ button.text }}</button>{{/if}}
       {{/if}}

@@ -15,6 +15,13 @@
 			header
 				h2 {{ title }}
 			p.font-futura-heavy-oblique {{{ body }}}
+
+			{{#if pros}}
+			ul
+				{{#each pros}}
+				li {{this}}
+				{{/each}}
+			{{/if}}
 			{{#if button}}
 			{{#if button.text}}
 			button(onClick="{{ button.action }}") {{ button.text }}

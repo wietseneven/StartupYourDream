@@ -3,6 +3,7 @@ var stage3 = {
 	setup: function() {
 		console.log('Setting up stage 3');
 		stage3.setLogin();
+	//	stage3.getMap();
 	},
 	setLogin: function(){
 		console.log('setting up login in stage 3');
@@ -112,13 +113,14 @@ var stage3 = {
 		map.setup('append', true, false, popupText);
 
 		setTimeout(function(){
-			map.el.map.hide();
+			//map.el.map.hide();
+			//map.el.map.fadeIn('fast');
 			video.setup('stage3Video', function() {
 				map.el.map.fadeIn('fast');
 				stage3.setTitlePos($('.btn.positionSet'), true);
 				map.el.text.removeClass('starting');
 			});
-		}, 500);
+		}, 1200);
 
 	},
 	selectedCountry: function(countryname){
@@ -131,7 +133,7 @@ var stage3 = {
 						text: 'Ga door naar de volgende koffer',
 						action: 'window.location.reload()'
 					}
-				}
+				};
 				app.el.template.html(template(context));
 			});
 		});

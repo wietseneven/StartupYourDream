@@ -8,6 +8,8 @@ var interact = {
 					authCode: authCode
 				},
 				function(data, status) {
+					var data = JSON.parse(data)[0];
+					app.session.request = data;
 				//	alert(data + '\n' + status);
 					callback();
 					return data;

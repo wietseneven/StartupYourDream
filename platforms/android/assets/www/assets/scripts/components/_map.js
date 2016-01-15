@@ -179,9 +179,9 @@ var map = {
 				app.getTemplate('popup', function (template) {
 					var content = {
 						title: map.stateNames[curID],
-						body: map.stateText[curID],
+						pros: map.stateText[curID],
 						button: {
-							'text': 'Kies '+ map.stateNames[curID],
+							'text': 'Start hier',
 							'action': 'stage3.selectedCountry("'+map.stateNames[curID]+'")'
 						}
 					};

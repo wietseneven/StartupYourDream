@@ -17,11 +17,12 @@ var stage4 = {
 				button: {
 					text:   'Wat nu? Ga door naar de volgende koffer',
 					//action: 'window.location.reload()'
-					action: 'stages.listStages()'
+					action: 'stage4.setup()'
 				}
 			};
 			app.el.template.html(template(context));
 			video.setup('stage4Video');
+			console.log(app.session.request);
 		});
 	}
 };

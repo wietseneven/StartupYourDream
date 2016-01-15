@@ -12,6 +12,8 @@ var keypad = {
 		keypad.commingFrom = function() { 'stage'+args.stage.setup()};
 		keypad.callback = callback;
 		keypad.renderKeypad(args);
+		keypad.keys.key = '';
+		keypad.keys.typed = '';
 	},
 	renderKeypad: function(args) {
 		app.getTemplate('keypad', function(template) {
