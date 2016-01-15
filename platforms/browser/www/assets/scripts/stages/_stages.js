@@ -50,7 +50,6 @@ var stages = {
 		app.getTemplate('button', function(template) {
 			var context = {
 				title: 'Kies je stage',
-				body: 'Bierrr',
 				buttons: {
 					1: {
 						text: 'Stage 1',

@@ -71,8 +71,6 @@
     </dict>
     <key>NSLocationWhenInUseUsageDescription</key>
     <string/>
-    <key>NSMainNibFile</key>
-    <string/>
     <key>UILaunchImages</key>
     <array>
       <dict>
@@ -177,6 +175,8 @@
       </dict>
     </array>
     <key>UIRequiresFullScreen</key>
+    <true/>
+    <key>UIStatusBarHidden</key>
     <true/>
   </dict>
 </plist>

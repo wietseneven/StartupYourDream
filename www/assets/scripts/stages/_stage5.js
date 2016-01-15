@@ -15,9 +15,9 @@ var stage5 = {
 				id: 'neelieVideo',
 				videoSrc: 'stage5/stage5.mp4',
 				button: {
-					text:   'Wat nu? Ga door naar de volgende koffer',
+					text:   'Hoe gaat het ondertussen met jouw '+app.session.request.category+' startup? Ga door naar de volgende koffer',
 					//action: 'window.location.reload()'
-					action: 'stages.listStages()'
+					action: 'stage5.setLogin()'
 				}
 			};
 			app.el.template.html(template(context));

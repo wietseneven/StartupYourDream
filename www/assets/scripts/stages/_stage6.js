@@ -16,8 +16,8 @@ var stage6 = {
 				videoSrc: 'stage6/stage6.mp4',
 				button: {
 					text:   'Wat nu? Ga door naar de volgende koffer',
-					//action: 'window.location.reload()'
-					action: 'stages.listStages()'
+					action: 'window.location.reload()'
+					//action: 'stages.listStages()'
 				}
 			};
 			app.el.template.html(template(context));
