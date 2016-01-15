@@ -17302,6 +17302,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/startups\/atooma.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10626,
+		"inputAbbreviatedPath": "\/assets\/images\/startups\/atooma.png",
+		"outputAbbreviatedPath": "\/assets\/images\/startups\/atooma.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/startups\/axosuits.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 87365,
+		"inputAbbreviatedPath": "\/assets\/images\/startups\/axosuits.png",
+		"outputAbbreviatedPath": "\/assets\/images\/startups\/axosuits.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/startups\/bgs\/kitten.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -17309,6 +17331,17 @@
 		"initialSize": 55037,
 		"inputAbbreviatedPath": "\/assets\/images\/startups\/bgs\/kitten.jpg",
 		"outputAbbreviatedPath": "\/assets\/images\/startups\/bgs\/kitten.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/startups\/upplication.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18136,
+		"inputAbbreviatedPath": "\/assets\/images\/startups\/upplication.jpeg",
+		"outputAbbreviatedPath": "\/assets\/images\/startups\/upplication.jpeg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

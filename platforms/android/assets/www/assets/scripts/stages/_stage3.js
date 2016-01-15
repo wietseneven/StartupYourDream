@@ -95,6 +95,17 @@ var stage3 = {
 		},500, 'swing', function() {
 			if (!right) {
 				stage3.getMap();
+
+			} else {
+				var data = JSON.parse(app.session.request);
+				console.log(data[0].country);
+				var startup = data[0].startups;
+				$.getJSON('assets/data/startups.json', function(data){
+					var startups = getObjects(data, 'id', startup);
+					console.log(startups[0].country);
+					var startupCountry = startups[0].country;
+					$('<br><small>Jouw coach '+ startup +' bevindt zich in ' +startupCountry+'</small>').appendTo($('.positionSet'));
+				});
 			}
 		});
 
@@ -139,3 +150,16 @@ var stage3 = {
 		});
 	}
 };
+
+function getObjects(obj, key, val) {
+	var objects = [];
+	for (var i in obj) {
+		if (!obj.hasOwnProperty(i)) continue;
+		if (typeof obj[i] == 'object') {
+			objects = objects.concat(getObjects(obj[i], key, val));
+		} else if (i == key && obj[key] == val) {
+			objects.push(obj);
+		}
+	}
+	return objects;
+}

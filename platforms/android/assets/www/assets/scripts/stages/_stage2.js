@@ -30,8 +30,8 @@ var stage2 = {
 				videoSrc: 'stage2/stage2.mp4',
 				button: {
 					text:   'Ga door naar de volgende koffer',
-					//action: 'window.location.reload()'
-					action: 'stages.listStages()'
+					action: 'window.location.reload()'
+					//action: 'stages.listStages()'
 				}
 			};
 			app.el.template.children().fadeOut('fast', function() {

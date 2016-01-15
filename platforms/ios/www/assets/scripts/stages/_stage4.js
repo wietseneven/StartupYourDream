@@ -15,7 +15,7 @@ var stage4 = {
 				id: 'stage4Video',
 				videoSrc: 'stage4/stage4.mp4',
 				button: {
-					text:   'Wat nu? Ga door naar de volgende koffer',
+					text:   'Het gaat super met je '+ app.session.request.category +' startup! Ga naar de volgende koffer',
 					//action: 'window.location.reload()'
 					action: 'stage4.setup()'
 				}
