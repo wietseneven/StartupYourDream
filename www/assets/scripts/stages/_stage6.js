@@ -15,7 +15,7 @@ var stage6 = {
 				id: 'stage6Video',
 				videoSrc: 'stage6/stage6.mp4',
 				button: {
-					text:   'Wat nu? Ga door naar de volgende koffer',
+					text:   'Het gaat niet goed! Wat nu? Ga door naar de volgende koffer',
 					action: 'window.location.reload()'
 					//action: 'stages.listStages()'
 				}

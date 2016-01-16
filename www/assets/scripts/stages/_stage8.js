@@ -21,7 +21,26 @@ var stage8 = {
 				}
 			};
 			app.el.template.html(template(context));
-			video.setup('stage8Video');
+			video.setup('stage8Video', function() {
+				stage8.finalText();
+			});
+		});
+	},
+	finalText: function() {
+		app.getTemplate('popup', function(template) {
+			var context = {
+				title: 'Gefeliciteerd!',
+				body: 'Met je succesvolle '+app.session.request.category+' startup in '+app.session.request.country+', Europa!',
+				button: {
+					text: 'Bedankt voor je reis!',
+					action: 'stage8.setup()'
+				}
+			};
+			app.el.template.html(template(context));
+
+			setTimeout(function(){
+				stage8.setup();
+			}, 12000);
 		});
 	}
 };
