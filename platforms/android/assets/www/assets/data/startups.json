@@ -1,0 +1,56 @@
+[
+  {
+    "name"    : "Blendle",
+    "country" : "Nederland",
+    "category": "Journalistiek",
+    "logo"    : "blendle.svg",
+    "image"   : "kitten.jpg",
+    "id"      : "blendle",
+    "content" : "<p>Blendle is de grootste en leukste kiosk van Nederland. Je bladert online door alle kranten en tijdschriften en betaalt alleen een paar cent voor de artikelen die je ook echt leest. Natuurlijk kun je ook complete kranten en tijdschriften kopen. Dat is goedkoper dan in de winkel, want we gebruiken geen papier.</p><p>Het leuke aan Blendle is dat je geen abonnement meer nodig hebt om al die geweldige artikelen te lezen. In plaats daarvan krijg je een account met een virtueel portemonneetje. En iedere nieuwe Blendle-fan krijgt meteen € 2,50 tegoed cadeau om ons gratis te proberen.</p><p>Inloggen bij Blendle kan met je e-mailadres of met Facebook. Als je bent ingelogd kun je een artikel kopen door erop te klikken. Er wordt dan een klein bedrag uit je portemonnee afgeschreven. Heb je een artikel gelezen, maar valt het tegen? Dan krijg je je geld terug, ook met één klik op de knop. Als je portemonnee leeg is, kun je hem heel simpel weer vullen met iDEAL, PayPal of je creditcard. Hoeveel en wanneer je opwaardeert heb je helemaal zelf in de hand. Want lees je niets? Dan betaal je ook niets. Vrij relaxed.</p>"
+  },
+  {
+    "name"    : "Spotify",
+    "country" : "Zweden",
+    "category": "Muziek",
+    "logo"    : "spotify.svg",
+    "image"   : "kitten.jpg",
+    "id"      : "spotify",
+    "content" : "<p>Met Spotify vind je makkelijk de juiste muziek voor elk moment – op je smartphone, computer, tablet en nog veel meer apparaten.</p><p>Er staan miljoenen nummers op Spotify. Dus of je nou aan het sporten, feesten of relaxen bent, de perfecte muziek is altijd binnen handbereik. Kies wat je wilt horen, of laat je door Spotify verrassen.</p><p>Je kunt ook bladeren door de muziekcollecties van vrienden, artiesten en sterren, of begin een radiozender en ga lekker achterover zitten.</p><p>Zet een soundtrack onder je leven met Spotify. Neem een abonnement of luister gratis.</p>"
+  },
+  {
+    "name"    : "Soundcloud",
+    "country" : "Duitsland",
+    "category": "Muziek",
+    "logo"    : "soundcloud.svg",
+    "image"   : "kitten.jpg",
+    "id"      : "soundcloud",
+    "content" : "<p>SoundCloud werd opgericht in Stockholm door sounddesigner Alex Ljung en artiest Eric Wahlforss, maar vestigde zich in augustus 2007 in Berlijn. De achterliggende gedachte was muzikanten de mogelijkheid te geven om opnames met elkaar te delen, maar werd later omgevormd tot een publicatie-instrument dat muzikanten de mogelijkheid geeft hun muzieknummers te verspreiden. SoundCloud telde in januari 2012 bijna 30 miljoen geregistreerde gebruikers. Ongeveer het dubbele van mei het jaar ervoor. Iedere minuut wordt er gemiddeld tien uur geluid geüpload en 180 miljoen mensen bezoeken maandelijks het platform.</p><p>Naast muziekstreaming via een website heeft SoundCloud ook diverse applicaties voor mobiele platformen ontwikkeld. In augustus 2014 bracht het bedrijf een nieuwe applicatie uit waarmee gebruikers via iPhone en iPad muziek kunnen streamen via SoundCloud.</p>"
+  },
+  {
+    "name"    : "Atooma",
+    "country" : "Italië",
+    "category": "Mobile",
+    "logo"    : "atooma.png",
+    "image"   : "kitten.jpg",
+    "id"      : "atooma",
+    "content" : "<p>Een slimme iPhone-gebruiker hoeft een hele hoop niet zelf te doen: installeer je de juiste apps, dan kun je veel gebruikelijke acties namelijk automatiseren. Dat was al mogelijk met bijvoorbeeld IFTTT en Workflow, maar er is nog een app die je iPhone voor jou aan het werk zet: Atooma. Hiermee stuurt de iPhone bijvoorbeeld automatisch weerupdates terwijl je aan het hardlopen bent en krijg je een e-mail met de gps-locatie van je auto – zonder dat je een knop indrukt.<p>Je vindt in Atooma negen acties waarmee de iPhone je automatisch kan helpen. Deze acties gebruiken van een simpele formule. De app kijkt of je iets specifieks aan het doen bent, waarna er op basis daarvan een actie wordt uitgevoerd. Veeg je Umbrella Reminder van rechts naar links? Dan zal de app je een notificatie sturen zodra het bij jou in de buurt gaat regenen. Met het recept Music on the Move start Atooma je favoriete muziekapp als je aan het hardlopen bent en er oordopjes zijn aangesloten op de audiopoort.</p>"
+  },
+  {
+    "name"    : "Upplication",
+    "country" : "Spanje",
+    "category": "App ontwikkeling",
+    "logo"    : "upplication.jpeg",
+    "image"   : "kitten.jpg",
+    "id"      : "upplication",
+    "content" : "<p>Upplication is een Spaanse startup die het mogelijk maakt voor mensen om zonder kennis van code apps te ontwikkelen.</p>"
+  },
+  {
+    "name"    : "Axosuits",
+    "country" : "Roemenië",
+    "category": "Medisch",
+    "logo"    : "axosuits.png",
+    "image"   : "kitten.jpg",
+    "id"      : "axosuits",
+    "content" : "<p>Axosuits is een vooruitstaande startup die high-tech, betaalbaarbare exoskeleton ontwikkeld.</p><p>Het doel is om mensen met een handicap te helpen om beter te lopen door het gebruiksgemak en toegankelijkheid die ze echt nodig hebben.</p><p>Exosuits is een klein maar toegewijd team van professionals die een robuust en bewezen technologie brengt voor de patiënten.</p><p>Axosuits brengt de technologie van morgen voor de prijs van een middelgrote auto voor patiënten en concurrerende lease plannen voor bedrijven</p>"
+  }
+]

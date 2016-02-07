@@ -20,7 +20,7 @@ var stage7 = {
 					//action: 'stages.listStages()'
 				}
 			};
-			app.el.template.html(template(context));
+			app.el.template.html(template(con	text));
 			video.setup('stage7Video');
 		});
 	}
